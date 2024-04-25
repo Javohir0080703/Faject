@@ -16,6 +16,9 @@ export default {
       },
       boxShadow:{
         "HeaderBtn":"0px 0px 25px 0px rgb(159, 149, 255)"
+      },
+      screens:{
+        "860px":"860px"
       }
     },
   },
