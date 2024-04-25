@@ -1110,13 +1110,13 @@ const Header = ({ language, setLanguage }) => {
               Мы здесь!
             </p>
             <div className="flex items-center space-x-[26px]">
-              <a href="https://telegram.org/">
+              <a target="_blank" href="https://telegram.org/">
                 <img src={telegram} alt="telegram" />
               </a>
-              <a href="https://www.instagram.com/">
+              <a target="_blank" href="https://www.instagram.com/">
                 <img src={instagram} alt="instagram" />
               </a>
-              <a href="https://www.whatsapp.com/">
+              <a target="_blank" href="https://www.whatsapp.com/">
                 <img src={watstapp} alt="watstap" />
               </a>
             </div>
