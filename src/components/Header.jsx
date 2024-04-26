@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import instagram from "../img/Instagram.svg";
 import watstapp from "../img/WhatsApp.svg";
 import telegram from "../img/Telegram.svg";
@@ -138,7 +138,7 @@ const Header = ({ language, setLanguage }) => {
             />
           </svg>
           <svg
-          className={`${hamburger ? "block" : "hidden"}`}
+            className={`${hamburger ? "block" : "hidden"}`}
             width="25"
             height="26"
             viewBox="0 0 25 26"
@@ -152,7 +152,7 @@ const Header = ({ language, setLanguage }) => {
           </svg>
         </button>
         <div className="flex items-center ">
-          <Link className="mr-26px ">
+          <Link to="/" className="mr-26px ">
             <svg
               className="hidden 860px:block"
               width="144"
@@ -340,7 +340,10 @@ const Header = ({ language, setLanguage }) => {
               }
             })}
           </button>
-          <Link to="apply" className="py-1.5 px-4 font-semibold text-base text-white bg-#040D12 border-white border-2 rounded-[22px] shadow-HeaderBtn ">
+          <Link
+            to="apply"
+            className="py-1.5 px-4 font-semibold text-base text-white bg-#040D12 border-white border-2 rounded-[22px] shadow-HeaderBtn "
+          >
             {headerTranslating.map((lan, index) => {
               if (lan.lang === language) {
                 return <p key={index}>{lan.button}</p>;
@@ -442,37 +445,40 @@ const Header = ({ language, setLanguage }) => {
             </div>
           )}
         </div>
-        <Link to="apply" className="860px:hidden block">
-          <svg
-            width="49"
-            height="38"
-            viewBox="0 0 49 38"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="1"
-              y="1.49976"
-              width="47"
-              height="35.0005"
-              rx="17.5003"
-              fill="#040D12"
-            />
-            <rect
-              x="1"
-              y="1.49976"
-              width="47"
-              height="35.0005"
-              rx="17.5003"
-              stroke="white"
-              strokeWidth="2"
-            />
-            <path
-              d="M17.7308 7.94104H31.2692C33.6385 7.94104 35.5 9.87704 35.5 12.341V29.061C35.5 29.413 35.3308 29.677 34.9923 29.853C34.9077 29.941 34.7385 29.941 34.6538 29.941C34.4846 29.941 34.2308 29.853 34.0615 29.765C30.4231 26.421 25.7692 24.661 20.9462 24.661H17.7308C15.3615 24.661 13.5 22.725 13.5 20.261V12.341C13.5 9.87704 15.3615 7.94104 17.7308 7.94104ZM21.1154 17.621H23.6538V20.261C23.6538 20.789 23.9923 21.141 24.5 21.141C25.0077 21.141 25.3462 20.789 25.3462 20.261V17.621H27.8846C28.3923 17.621 28.7308 17.269 28.7308 16.741C28.7308 16.213 28.3923 15.861 27.8846 15.861H25.3462V13.221C25.3462 12.693 25.0077 12.341 24.5 12.341C23.9923 12.341 23.6538 12.693 23.6538 13.221V15.861H21.1154C20.6077 15.861 20.2692 16.213 20.2692 16.741C20.2692 17.269 20.6077 17.621 21.1154 17.621Z"
-              fill="white"
-            />
-          </svg>
-        </Link>
+        <div className={`860px:hidden block `}>
+          <Link to="apply">
+            <svg
+              width="49"
+              height="38"
+              viewBox="0 0 49 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="1"
+                y="1.49976"
+                width="47"
+                height="35.0005"
+                rx="17.5003"
+                fill="#040D12"
+              />
+              <rect
+                x="1"
+                y="1.49976"
+                width="47"
+                height="35.0005"
+                rx="17.5003"
+                stroke="white"
+                strokeWidth="2"
+              />
+              <path
+                d="M17.7308 7.94104H31.2692C33.6385 7.94104 35.5 9.87704 35.5 12.341V29.061C35.5 29.413 35.3308 29.677 34.9923 29.853C34.9077 29.941 34.7385 29.941 34.6538 29.941C34.4846 29.941 34.2308 29.853 34.0615 29.765C30.4231 26.421 25.7692 24.661 20.9462 24.661H17.7308C15.3615 24.661 13.5 22.725 13.5 20.261V12.341C13.5 9.87704 15.3615 7.94104 17.7308 7.94104ZM21.1154 17.621H23.6538V20.261C23.6538 20.789 23.9923 21.141 24.5 21.141C25.0077 21.141 25.3462 20.789 25.3462 20.261V17.621H27.8846C28.3923 17.621 28.7308 17.269 28.7308 16.741C28.7308 16.213 28.3923 15.861 27.8846 15.861H25.3462V13.221C25.3462 12.693 25.0077 12.341 24.5 12.341C23.9923 12.341 23.6538 12.693 23.6538 13.221V15.861H21.1154C20.6077 15.861 20.2692 16.213 20.2692 16.741C20.2692 17.269 20.6077 17.621 21.1154 17.621Z"
+                fill="white"
+              />
+            </svg>
+          </Link>
+        </div>
+
       </div>
 
       {/* uslugi */}
