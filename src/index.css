@@ -41,3 +41,14 @@ header {
   min-height: 100vh;
   /* background-color: rgba(239, 0, 0, 0.7); */
 }
+/* 
+select option {
+  background-color: #040D12;
+  color: white;
+} */
+
+
+/* select:focus {
+  outline: none;
+  border: none;
+} */

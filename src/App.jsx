@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import MainLayout from "./layouts/MainLayout";
+import Zayavka from "./components/Zayavka";
 const App = () => {
   const [language, setLanguage] = useState("ru");
   const router = createBrowserRouter(
@@ -17,6 +18,10 @@ const App = () => {
         <Route
           path="/"
           element={<Home language={language} setLanguage={setLanguage} />}
+        />
+        <Route
+          path="apply"
+          element={<Zayavka language={language} setLanguage={setLanguage} />}
         />
       </Route>
     )

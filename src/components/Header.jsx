@@ -132,9 +132,9 @@ const Header = ({ language, setLanguage }) => {
             <path
               d="M1.5 6.49817H23.5M1.5 13.4982H23.5M1.5 20.4982H23.5"
               stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <svg
@@ -340,7 +340,7 @@ const Header = ({ language, setLanguage }) => {
               }
             })}
           </button>
-          <Link className="py-1.5 px-4 font-semibold text-base text-white bg-#040D12 border-white border-2 rounded-[22px] shadow-HeaderBtn ">
+          <Link to="apply" className="py-1.5 px-4 font-semibold text-base text-white bg-#040D12 border-white border-2 rounded-[22px] shadow-HeaderBtn ">
             {headerTranslating.map((lan, index) => {
               if (lan.lang === language) {
                 return <p key={index}>{lan.button}</p>;
@@ -442,7 +442,7 @@ const Header = ({ language, setLanguage }) => {
             </div>
           )}
         </div>
-        <button className="860px:hidden block">
+        <Link to="apply" className="860px:hidden block">
           <svg
             width="49"
             height="38"
@@ -465,14 +465,14 @@ const Header = ({ language, setLanguage }) => {
               height="35.0005"
               rx="17.5003"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <path
               d="M17.7308 7.94104H31.2692C33.6385 7.94104 35.5 9.87704 35.5 12.341V29.061C35.5 29.413 35.3308 29.677 34.9923 29.853C34.9077 29.941 34.7385 29.941 34.6538 29.941C34.4846 29.941 34.2308 29.853 34.0615 29.765C30.4231 26.421 25.7692 24.661 20.9462 24.661H17.7308C15.3615 24.661 13.5 22.725 13.5 20.261V12.341C13.5 9.87704 15.3615 7.94104 17.7308 7.94104ZM21.1154 17.621H23.6538V20.261C23.6538 20.789 23.9923 21.141 24.5 21.141C25.0077 21.141 25.3462 20.789 25.3462 20.261V17.621H27.8846C28.3923 17.621 28.7308 17.269 28.7308 16.741C28.7308 16.213 28.3923 15.861 27.8846 15.861H25.3462V13.221C25.3462 12.693 25.0077 12.341 24.5 12.341C23.9923 12.341 23.6538 12.693 23.6538 13.221V15.861H21.1154C20.6077 15.861 20.2692 16.213 20.2692 16.741C20.2692 17.269 20.6077 17.621 21.1154 17.621Z"
               fill="white"
             />
           </svg>
-        </button>
+        </Link>
       </div>
 
       {/* uslugi */}
