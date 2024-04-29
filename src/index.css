@@ -52,3 +52,13 @@ select option {
   outline: none;
   border: none;
 } */
+body{
+  overflow-x: hidden;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll; /* Yoki overflow-y: auto; qaysi yo'nalishda scroll kerakligini belgilang */
+  max-width: 100%; 
+
+}

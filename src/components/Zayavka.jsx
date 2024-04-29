@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-
 const Zayavka = ({ language, setLanguage }) => {
   const [channel, setChannel] = useState("");
   const [name, setName] = useState("");
@@ -65,7 +64,7 @@ const Zayavka = ({ language, setLanguage }) => {
     }
   };
   return (
-    <section className="bg-#040D12 pt-2.5 h-[70vh]">
+    <section className="bg-#040D12 pt-2.5 h-full min-h-[70vh]">
       <div className="containerb">
         <div>
           {zayavka.map((lan, index) => {
@@ -73,7 +72,7 @@ const Zayavka = ({ language, setLanguage }) => {
               return (
                 <h1
                   key={index}
-                  className="font-semibold text-[64px] leading-[78px] tracking-[-4%] text-white mb-4"
+                  className="font-semibold md:text-[64px] sm:text-5xl text-3xl leading-[78px] tracking-[-4%] text-white mb-4 860px:text-left text-center "
                 >
                   {lan.title}
                 </h1>
@@ -81,15 +80,16 @@ const Zayavka = ({ language, setLanguage }) => {
             }
           })}
         </div>
+        {/* ru */}
         <form
           onSubmit={handleSubmitInput}
-          className="space-y-4 w-full max-w-[540px]"
+          className={`space-y-4 w-full max-w-[540px] 860px:mx-0 mx-auto ${language === "ru" ? "block" : "hidden"}`}
         >
           <input
             onChange={handleNameChange}
             value={name}
             className="block py-1.5 pl-4 w-full max-w-[540px] border-white border bg-transparent rounded-[22px] text-white"
-            type="search"
+            type="text"
             placeholder="Введите ваше имя"
           />
           {/* channel */}
@@ -132,6 +132,124 @@ const Zayavka = ({ language, setLanguage }) => {
               type="text"
               value={profileName}
               placeholder="Ваше имя пользователя/телефон"
+              className="w-full max-w-[540px] py-1.5 pl-4 border-white border rounded-[22px] bg-transparent text-white"
+            />
+          </div>
+          <button className="block w-full max-w-[123px] ml-auto py-1.5 px-4 font-semibold text-base leading-8 border-2 border-white opacity-[35%] rounded-[22px] text-white ">
+            Отправить
+          </button>
+        </form>
+        {/* eng */}
+        <form
+          onSubmit={handleSubmitInput}
+          className={`space-y-4 w-full max-w-[540px] 860px:mx-0 mx-auto ${language === "eng" ? "block" : "hidden"}`}
+        >
+          <input
+            onChange={handleNameChange}
+            value={name}
+            className="block py-1.5 pl-4 w-full max-w-[540px] border-white border bg-transparent rounded-[22px] text-white"
+            type="text"
+            placeholder="Enter your name"
+          />
+          {/* channel */}
+          <select
+            onChange={handleChannelChange}
+            defaultValue="DEFAULT"
+            className="block  bg-transparent optional:font-medium optional:text-base optional:leading-8 optional:bg-#040D12 optional:w-full optional:max-w-[540px] optional:shadow-none  border border-white text-white px-4 py-1.5 w-full max-w-[520px]   rounded-[22px]"
+          >
+            <option value="DEFAULT" disabled>
+              Select a channel for communication
+            </option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Telegram">Telegram</option>
+            <option value="Messenger_name">Messenger_name</option>
+            <option value="Messenger_name">Messenger_name</option>
+            <option value="Messenger_name">Messenger_name</option>
+            <option value="Messenger_name">Messenger_name</option>
+          </select>
+
+          {/* service */}
+          <select
+            onChange={handleServicesChange}
+            defaultValue="DEFAULT"
+            className="block  bg-transparent optional:font-medium optional:text-base optional:leading-8 optional:bg-#040D12 optional:w-full optional:max-w-[540px] optional:shadow-none text-white px-4 py-1.5 w-full max-w-[520px]   rounded-[22px] border-white border "
+          >
+            <option value="DEFAULT" disabled>
+              Select a service
+            </option>
+            <option value="Mobile development">Mobile development</option>
+            <option value="Mobile development">Mobile development</option>
+            <option value="Mobile development">Mobile development</option>
+            <option value="Mobile development">Mobile development</option>
+            <option value="Mobile development">Mobile development</option>
+            <option value="Mobile development">Mobile development</option>
+          </select>
+          {/* profile name */}
+          <div className={`${service.length > 0 ? "block" : "hidden"}`}>
+            <input
+              onChange={handleProfileNameChange}
+              type="text"
+              value={profileName}
+              placeholder="Your username/phone number"
+              className="w-full max-w-[540px] py-1.5 pl-4 border-white border rounded-[22px] bg-transparent text-white"
+            />
+          </div>
+          <button className="block w-full max-w-[123px] ml-auto py-1.5 px-4 font-semibold text-base leading-8 border-2 border-white opacity-[35%] rounded-[22px] text-white ">
+          Send
+          </button>
+        </form>
+        {/* uzb */}
+        <form
+          onSubmit={handleSubmitInput}
+          className={`space-y-4 w-full max-w-[540px] 860px:mx-0 mx-auto ${language === "uzb" ? "block" : "hidden"}`}
+        >
+          <input
+            onChange={handleNameChange}
+            value={name}
+            className="block py-1.5 pl-4 w-full max-w-[540px] border-white border bg-transparent rounded-[22px] text-white"
+            type="text"
+            placeholder="Ismingizni kiriting"
+          />
+          {/* channel */}
+          <select
+            onChange={handleChannelChange}
+            defaultValue="DEFAULT"
+            className="block  bg-transparent optional:font-medium optional:text-base optional:leading-8 optional:bg-#040D12 optional:w-full optional:max-w-[540px] optional:shadow-none  border border-white text-white px-4 py-1.5 w-full max-w-[520px]   rounded-[22px]"
+          >
+            <option value="DEFAULT" disabled>
+            Aloqa uchun kanalni tanlang
+            </option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Telegram">Telegram</option>
+            <option value="Messenger_name">Messenger_name</option>
+            <option value="Messenger_name">Messenger_name</option>
+            <option value="Messenger_name">Messenger_name</option>
+            <option value="Messenger_name">Messenger_name</option>
+          </select>
+
+          {/* service */}
+          <select
+            onChange={handleServicesChange}
+            defaultValue="DEFAULT"
+            className="block  bg-transparent optional:font-medium optional:text-base optional:leading-8 optional:bg-#040D12 optional:w-full optional:max-w-[540px] optional:shadow-none text-white px-4 py-1.5 w-full max-w-[520px]   rounded-[22px] border-white border "
+          >
+            <option value="DEFAULT" disabled>
+            Xizmatni tanlang
+            </option>
+            <option value="Mobile development">Mobil rivojlanish</option>
+            <option value="Mobil rivojlanish">Mobil rivojlanish</option>
+            <option value="Mobil rivojlanish">Mobil rivojlanish</option>
+            <option value="Mobil rivojlanish">Mobil rivojlanish</option>
+            <option value="Mobil rivojlanish">Mobil rivojlanish</option>
+            <option value="Mobil rivojlanish">Mobil rivojlanish</option>
+          </select>
+          {/* profile name */}
+          <div className={`${service.length > 0 ? "block" : "hidden"}`}>
+            <input
+              onChange={handleProfileNameChange}
+              type="text"
+              value={profileName}
+              placeholder="Sizning foydalanuvchi ismingiz/telefon raqamingiz"
               className="w-full max-w-[540px] py-1.5 pl-4 border-white border rounded-[22px] bg-transparent text-white"
             />
           </div>

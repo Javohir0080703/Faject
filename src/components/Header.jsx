@@ -478,7 +478,6 @@ const Header = ({ language, setLanguage }) => {
             </svg>
           </Link>
         </div>
-
       </div>
 
       {/* uslugi */}
@@ -831,7 +830,7 @@ const Header = ({ language, setLanguage }) => {
             <nav
               className={`${
                 language === "eng" ? "block" : "hidden"
-              }  max-860px:hidden`}
+              }`}
             >
               <ul className="flex flex-col items-start space-y-[26px]">
                 <li>
@@ -860,7 +859,7 @@ const Header = ({ language, setLanguage }) => {
             <nav
               className={`${
                 language === "uzb" ? "block" : "hidden"
-              }  max-860px:hidden`}
+              } `}
             >
               <ul className="flex flex-col items-start space-y-[26px]">
                 <li>
