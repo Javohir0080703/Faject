@@ -61,7 +61,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
           <ul
             className={`1030px:space-y-4 ${
               language === "ru" ? "flex" : "hidden"
-            }   items-center justify-between 1030px:scroll-container whitespace-nowrap mb-5 space-x-1 `}
+            }   items-center justify-between scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
           >
             <li>
               <button
@@ -136,7 +136,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
           <ul
             className={`1030px:space-y-4 ${
               language === "eng" ? "1030px:block" : "hidden"
-            }  flex items-center  1030px:scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
+            }  flex items-center  scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
           >
             <li>
               <button
@@ -211,7 +211,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
           <ul
             className={`1030px:space-y-4 ${
               language === "uzb" ? "1030px:block" : "hidden"
-            }  flex items-center  1030px:scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
+            }  flex items-center  scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
           >
             <li>
               <button

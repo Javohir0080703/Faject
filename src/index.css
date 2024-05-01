@@ -31,6 +31,9 @@ header {
     rgba(4, 13, 18, 0.45) 84.8%
   );
 }
+body{
+  overflow-x: hidden;
+}
 
 .overlay {
   position: fixed;
@@ -57,8 +60,16 @@ body{
 }
 
 .scroll-container {
-  display: flex;
-  overflow-x: scroll; /* Yoki overflow-y: auto; qaysi yo'nalishda scroll kerakligini belgilang */
-  max-width: 100%; 
+  /* display: flex;
+  overflow-x: scroll;
+  max-width: 100%;  */
 
+}
+
+@media only screen and (max-width: 1030px) {
+  .scroll-container {
+      overflow-x: scroll; 
+      max-width: 100%; 
+    
+  }
 }

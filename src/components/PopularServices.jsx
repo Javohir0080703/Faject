@@ -133,7 +133,7 @@ const PopularServices = ({ language, setLanguage }) => {
       <div className="containerb 1030px:flex items-center justify-between">
         <div>
           {/* ru */}
-          <ul className={`1030px:space-y-4 ${language === "ru" ? "1030px:block" : "hidden"}  flex items-center  1030px:scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}>
+          <ul className={`1030px:space-y-4 ${language === "ru" ? "1030px:block" : "hidden"}   flex items-center  scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}>
             <li>
               <button
                 onClick={() => handleTabClick(PopularServices[0].id)}
@@ -208,7 +208,7 @@ const PopularServices = ({ language, setLanguage }) => {
             </li>
           </ul>
           {/* eng */}
-          <ul className={`1030px:space-y-4 ${language === "eng" ? "1030px:block" : "hidden"}  flex items-center  1030px:scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}>
+          <ul className={`1030px:space-y-4 ${language === "eng" ? "1030px:block" : "hidden"}  flex items-center  scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}>
             <li>
               <button
                 onClick={() => handleTabClick(PopularServices[0].id)}
@@ -283,7 +283,7 @@ const PopularServices = ({ language, setLanguage }) => {
             </li>
           </ul>
           {/* uzb */}
-          <ul className={`1030px:space-y-4 ${language === "uzb" ? "1030px:block" : "hidden"}  flex items-center  1030px:scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}>
+          <ul className={`1030px:space-y-4 ${language === "uzb" ? "1030px:block" : "hidden"}  flex items-center  scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}>
             <li>
               <button
                 onClick={() => handleTabClick(PopularServices[0].id)}
