@@ -31,7 +31,7 @@ header {
     rgba(4, 13, 18, 0.45) 84.8%
   );
 }
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -42,34 +42,18 @@ body{
   left: 0;
   width: 100%;
   min-height: 100vh;
-  /* background-color: rgba(239, 0, 0, 0.7); */
 }
-/* 
-select option {
-  background-color: #040D12;
-  color: white;
-} */
 
-
-/* select:focus {
-  outline: none;
-  border: none;
-} */
-body{
+body {
   overflow-x: hidden;
 }
 
 .scroll-container {
-  /* display: flex;
-  overflow-x: scroll;
-  max-width: 100%;  */
-
 }
 
 @media only screen and (max-width: 1030px) {
   .scroll-container {
-      overflow-x: scroll; 
-      max-width: 100%; 
-    
+    overflow-x: scroll;
+    max-width: 100%;
   }
 }

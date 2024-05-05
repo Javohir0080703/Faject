@@ -8,14 +8,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 const HomePortfolio = ({ language, setLanguage }) => {
-  const [activeTab, setActiveTab] = useState("".trim());
+  const [activeTab, setActiveTab] = useState(
+    "Mobile development" ||
+      "Website development" ||
+      "Bot development" ||
+      "SMM" ||
+      "SEO" ||
+      "contextual advertising"
+  );
 
   useEffect(() => {
-    setActiveTab("".trim());
+    setActiveTab(
+      "Mobile development",
+      "Website development",
+      "Bot development",
+      "SMM",
+      "SEO",
+      "contextual advertising"
+    );
   }, []);
 
-  const handleTabClick = (e) => {
-    setActiveTab(e);
+  const handleTabClick = (tip) => {
+    setActiveTab(tip);
   };
 
   let count = 0;
@@ -59,9 +73,9 @@ const HomePortfolio = ({ language, setLanguage }) => {
         <div>
           {/* ru */}
           <ul
-            className={`1030px:space-y-4 ${
+            className={` ${
               language === "ru" ? "flex" : "hidden"
-            }   items-center justify-between scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
+            }   items-center justify-between scroll-container whitespace-nowrap mb-5 space-x-1 `}
           >
             <li>
               <button
@@ -134,9 +148,9 @@ const HomePortfolio = ({ language, setLanguage }) => {
           </ul>
           {/* eng */}
           <ul
-            className={`1030px:space-y-4 ${
-              language === "eng" ? "1030px:block" : "hidden"
-            }  flex items-center  scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
+            className={`${
+              language === "eng" ? "flex" : "hidden"
+            }   items-center justify-between scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
           >
             <li>
               <button
@@ -209,9 +223,9 @@ const HomePortfolio = ({ language, setLanguage }) => {
           </ul>
           {/* uzb */}
           <ul
-            className={`1030px:space-y-4 ${
-              language === "uzb" ? "1030px:block" : "hidden"
-            }  flex items-center  scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
+            className={` ${
+              language === "uzb" ? "flex" : "hidden"
+            }   items-center justify-between scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
           >
             <li>
               <button
@@ -285,28 +299,142 @@ const HomePortfolio = ({ language, setLanguage }) => {
         </div>
 
         <Swiper
-        //   spaceBetween={4}
+          //   spaceBetween={4}
           slidesPerView={2}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper"
+          className={`mySwiper ${
+            activeTab == "Website development" ? "block" : "hidden"
+          }`}
         >
           {HomePortfolioData.map((lan, index) => {
             if (language === lan.lang) {
               return (
-                <SwiperSlide
-                  key={index}
-                  className={`${activeTab === lan.tip ? "block" : "hidden"}`}
-                >
+                <SwiperSlide key={index} className={``}>
                   <img
                     className="mb-6 w-full max-w-[523px] h-[260px]"
                     src={lan.img}
                     alt="Img"
                   />
+                  <p>{lan.title}</p>
                 </SwiperSlide>
               );
-            } else {
-              return null; // Agar to'g'ri kategoriya bo'lmasa, null qaytarish
+            }
+          })}
+        </Swiper>
+        <Swiper
+          //   spaceBetween={4}
+          slidesPerView={2}
+          navigation={true}
+          modules={[Navigation]}
+          className={`mySwiper ${
+            activeTab == "Bot development" ? "block" : "hidden"
+          }`}
+        >
+          {HomePortfolioData.map((lan, index) => {
+            if (language === lan.lang) {
+              return (
+                <SwiperSlide key={index} className={``}>
+                  <img
+                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    src={lan.img}
+                    alt="Img"
+                  />
+                  <p>{lan.title}</p>
+                </SwiperSlide>
+              );
+            }
+          })}
+        </Swiper>
+        <Swiper
+          //   spaceBetween={4}
+          slidesPerView={2}
+          navigation={true}
+          modules={[Navigation]}
+          className={`mySwiper ${activeTab == "SMM" ? "block" : "hidden"}`}
+        >
+          {HomePortfolioData.map((lan, index) => {
+            if (language === lan.lang) {
+              return (
+                <SwiperSlide key={index} className={``}>
+                  <img
+                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    src={lan.img}
+                    alt="Img"
+                  />
+                  <p>{lan.title}</p>
+                </SwiperSlide>
+              );
+            }
+          })}
+        </Swiper>
+        <Swiper
+          //   spaceBetween={4}
+          slidesPerView={2}
+          navigation={true}
+          modules={[Navigation]}
+          className={`mySwiper ${activeTab == "SEO" ? "block" : "hidden"}`}
+        >
+          {HomePortfolioData.map((lan, index) => {
+            if (language === lan.lang) {
+              return (
+                <SwiperSlide key={index} className={``}>
+                  <img
+                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    src={lan.img}
+                    alt="Img"
+                  />
+                  <p>{lan.title}</p>
+                </SwiperSlide>
+              );
+            }
+          })}
+        </Swiper>
+        <Swiper
+          //   spaceBetween={4}
+          slidesPerView={2}
+          navigation={true}
+          modules={[Navigation]}
+          className={`mySwiper ${
+            activeTab == "Mobile development" ? "block" : "hidden"
+          }`}
+        >
+          {HomePortfolioData.map((lan, index) => {
+            if (language === lan.lang) {
+              return (
+                <SwiperSlide key={index} className={``}>
+                  <img
+                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    src={lan.img}
+                    alt="Img"
+                  />
+                  <p>{lan.title}</p>
+                </SwiperSlide>
+              );
+            }
+          })}
+        </Swiper>
+        <Swiper
+          //   spaceBetween={4}
+          slidesPerView={2}
+          navigation={true}
+          modules={[Navigation]}
+          className={`mySwiper ${
+            activeTab == "contextual advertising" ? "block" : "hidden"
+          }`}
+        >
+          {HomePortfolioData.map((lan, index) => {
+            if (language === lan.lang) {
+              return (
+                <SwiperSlide key={index} className={``}>
+                  <img
+                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    src={lan.img}
+                    alt="Img"
+                  />
+                  <p>{lan.title}</p>
+                </SwiperSlide>
+              );
             }
           })}
         </Swiper>
