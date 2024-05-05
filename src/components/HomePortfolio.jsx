@@ -8,24 +8,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 const HomePortfolio = ({ language, setLanguage }) => {
-  const [activeTab, setActiveTab] = useState(
-    "Mobile development" ||
-      "Website development" ||
-      "Bot development" ||
-      "SMM" ||
-      "SEO" ||
-      "contextual advertising"
-  );
+  const [activeTab, setActiveTab] = useState();
 
   useEffect(() => {
-    setActiveTab(
-      "Mobile development",
-      "Website development",
-      "Bot development",
-      "SMM",
-      "SEO",
-      "contextual advertising"
-    );
+    setActiveTab("Website development");
   }, []);
 
   const handleTabClick = (tip) => {
@@ -75,7 +61,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
           <ul
             className={` ${
               language === "ru" ? "flex" : "hidden"
-            }   items-center justify-between scroll-container whitespace-nowrap mb-5 space-x-1 `}
+            }   items-center justify-between scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
           >
             <li>
               <button
@@ -300,7 +286,14 @@ const HomePortfolio = ({ language, setLanguage }) => {
 
         <Swiper
           //   spaceBetween={4}
-          slidesPerView={2}
+          slidesPerView={1}
+          centeredSlides={true}
+          breakpoints={{
+            1030: {
+              slidesPerView: 2,
+              centeredSlides: false,
+            },
+          }}
           navigation={true}
           modules={[Navigation]}
           className={`mySwiper ${
@@ -310,9 +303,14 @@ const HomePortfolio = ({ language, setLanguage }) => {
           {HomePortfolioData.map((lan, index) => {
             if (language === lan.lang) {
               return (
-                <SwiperSlide key={index} className={``}>
+                <SwiperSlide
+                  key={index}
+                  className={`${
+                    lan.tip === "Website development" ? "" : "hidden"
+                  }`}
+                >
                   <img
-                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
                     src={lan.img}
                     alt="Img"
                   />
@@ -324,7 +322,13 @@ const HomePortfolio = ({ language, setLanguage }) => {
         </Swiper>
         <Swiper
           //   spaceBetween={4}
-          slidesPerView={2}
+          slidesPerView={1}
+          breakpoints={{
+            1030: {
+              slidesPerView: 2,
+              centeredSlides: false,
+            },
+          }}
           navigation={true}
           modules={[Navigation]}
           className={`mySwiper ${
@@ -334,9 +338,12 @@ const HomePortfolio = ({ language, setLanguage }) => {
           {HomePortfolioData.map((lan, index) => {
             if (language === lan.lang) {
               return (
-                <SwiperSlide key={index} className={``}>
+                <SwiperSlide
+                  key={index}
+                  className={`${lan.tip === "Bot development" ? "" : "hidden"}`}
+                >
                   <img
-                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
                     src={lan.img}
                     alt="Img"
                   />
@@ -348,7 +355,13 @@ const HomePortfolio = ({ language, setLanguage }) => {
         </Swiper>
         <Swiper
           //   spaceBetween={4}
-          slidesPerView={2}
+          slidesPerView={1}
+          breakpoints={{
+            1030: {
+              slidesPerView: 2,
+              centeredSlides: false,
+            },
+          }}
           navigation={true}
           modules={[Navigation]}
           className={`mySwiper ${activeTab == "SMM" ? "block" : "hidden"}`}
@@ -356,9 +369,12 @@ const HomePortfolio = ({ language, setLanguage }) => {
           {HomePortfolioData.map((lan, index) => {
             if (language === lan.lang) {
               return (
-                <SwiperSlide key={index} className={``}>
+                <SwiperSlide
+                  key={index}
+                  className={`${lan.tip === "SMM" ? "" : "hidden"}`}
+                >
                   <img
-                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
                     src={lan.img}
                     alt="Img"
                   />
@@ -370,7 +386,13 @@ const HomePortfolio = ({ language, setLanguage }) => {
         </Swiper>
         <Swiper
           //   spaceBetween={4}
-          slidesPerView={2}
+          slidesPerView={1}
+          breakpoints={{
+            1030: {
+              slidesPerView: 2,
+              centeredSlides: false,
+            },
+          }}
           navigation={true}
           modules={[Navigation]}
           className={`mySwiper ${activeTab == "SEO" ? "block" : "hidden"}`}
@@ -378,9 +400,12 @@ const HomePortfolio = ({ language, setLanguage }) => {
           {HomePortfolioData.map((lan, index) => {
             if (language === lan.lang) {
               return (
-                <SwiperSlide key={index} className={``}>
+                <SwiperSlide
+                  key={index}
+                  className={`${lan.tip === "SEO" ? "" : "hidden"}`}
+                >
                   <img
-                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
                     src={lan.img}
                     alt="Img"
                   />
@@ -392,7 +417,13 @@ const HomePortfolio = ({ language, setLanguage }) => {
         </Swiper>
         <Swiper
           //   spaceBetween={4}
-          slidesPerView={2}
+          slidesPerView={1}
+          breakpoints={{
+            1030: {
+              slidesPerView: 2,
+              centeredSlides: false,
+            },
+          }}
           navigation={true}
           modules={[Navigation]}
           className={`mySwiper ${
@@ -402,9 +433,14 @@ const HomePortfolio = ({ language, setLanguage }) => {
           {HomePortfolioData.map((lan, index) => {
             if (language === lan.lang) {
               return (
-                <SwiperSlide key={index} className={``}>
+                <SwiperSlide
+                  key={index}
+                  className={`${
+                    lan.tip === "Mobile development" ? "" : "hidden"
+                  }`}
+                >
                   <img
-                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
                     src={lan.img}
                     alt="Img"
                   />
@@ -416,7 +452,13 @@ const HomePortfolio = ({ language, setLanguage }) => {
         </Swiper>
         <Swiper
           //   spaceBetween={4}
-          slidesPerView={2}
+          slidesPerView={1}
+          breakpoints={{
+            1030: {
+              slidesPerView: 2,
+              centeredSlides: false,
+            },
+          }}
           navigation={true}
           modules={[Navigation]}
           className={`mySwiper ${
@@ -426,9 +468,14 @@ const HomePortfolio = ({ language, setLanguage }) => {
           {HomePortfolioData.map((lan, index) => {
             if (language === lan.lang) {
               return (
-                <SwiperSlide key={index} className={``}>
+                <SwiperSlide
+                  key={index}
+                  className={`${
+                    lan.tip === "contextual advertising" ? "" : "hidden"
+                  }`}
+                >
                   <img
-                    className="mb-6 w-full max-w-[523px] h-[260px]"
+                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
                     src={lan.img}
                     alt="Img"
                   />
