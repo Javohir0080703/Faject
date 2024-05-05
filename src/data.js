@@ -12,7 +12,7 @@ export const HomePortfolioData = [
   },
   {
     title: "Мобильная разработка",
-    text: "Interface with menu in augmented reality for restaurants",
+    text: "Интерфейс с меню в дополненной реальности для ресторанов",
     img: img2,
     tip: "Mobile development",
     lang: "ru",

@@ -7,8 +7,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 const HomePortfolio = ({ language, setLanguage }) => {
   const [activeTab, setActiveTab] = useState();
+  const [custom_swiper, set_swiper] = useState({});
+  const nextSlide = () => {
+    custom_swiper.slideNext();
+  };
+  const prevSlide = () => {
+    custom_swiper.slidePrev();
+  };
 
   useEffect(() => {
     setActiveTab("Website development");
@@ -285,13 +293,15 @@ const HomePortfolio = ({ language, setLanguage }) => {
         </div>
 
         <Swiper
-          //   spaceBetween={4}
+          spaceBetween={10}
           slidesPerView={1}
-          centeredSlides={true}
+          onInit={(ev) => {
+            set_swiper(ev);
+          }}
           breakpoints={{
-            1030: {
+            950: {
               slidesPerView: 2,
-              centeredSlides: false,
+              // centeredSlides: true,
             },
           }}
           navigation={true}
@@ -307,121 +317,36 @@ const HomePortfolio = ({ language, setLanguage }) => {
                   key={index}
                   className={`${
                     lan.tip === "Website development" ? "" : "hidden"
-                  }`}
+                  } `}
                 >
-                  <img
-                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
-                    src={lan.img}
-                    alt="Img"
-                  />
-                  <p>{lan.title}</p>
+                  <div className="relative w-full max-w-[523px] mx-auto h-full max-h-[260px]">
+                    <img
+                      className="w-full max-w-[523px] mx-auto h-full max-h-[260px]"
+                      src={lan.img}
+                      alt="Img"
+                    />
+                    <p className="absolute text-xs leading-5 rounded-tl-3xl rounded-r-3xl top-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.title}
+                    </p>
+                    <p className="absolute text-xs leading-5 rounded-rt-3xl rounded-l-3xl  bottom-0 right-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.text}
+                    </p>
+                  </div>
                 </SwiperSlide>
               );
             }
           })}
         </Swiper>
         <Swiper
-          //   spaceBetween={4}
+          spaceBetween={10}
           slidesPerView={1}
-          breakpoints={{
-            1030: {
-              slidesPerView: 2,
-              centeredSlides: false,
-            },
+          onInit={(ev) => {
+            set_swiper(ev);
           }}
-          navigation={true}
-          modules={[Navigation]}
-          className={`mySwiper ${
-            activeTab == "Bot development" ? "block" : "hidden"
-          }`}
-        >
-          {HomePortfolioData.map((lan, index) => {
-            if (language === lan.lang) {
-              return (
-                <SwiperSlide
-                  key={index}
-                  className={`${lan.tip === "Bot development" ? "" : "hidden"}`}
-                >
-                  <img
-                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
-                    src={lan.img}
-                    alt="Img"
-                  />
-                  <p>{lan.title}</p>
-                </SwiperSlide>
-              );
-            }
-          })}
-        </Swiper>
-        <Swiper
-          //   spaceBetween={4}
-          slidesPerView={1}
           breakpoints={{
-            1030: {
+            950: {
               slidesPerView: 2,
-              centeredSlides: false,
-            },
-          }}
-          navigation={true}
-          modules={[Navigation]}
-          className={`mySwiper ${activeTab == "SMM" ? "block" : "hidden"}`}
-        >
-          {HomePortfolioData.map((lan, index) => {
-            if (language === lan.lang) {
-              return (
-                <SwiperSlide
-                  key={index}
-                  className={`${lan.tip === "SMM" ? "" : "hidden"}`}
-                >
-                  <img
-                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
-                    src={lan.img}
-                    alt="Img"
-                  />
-                  <p>{lan.title}</p>
-                </SwiperSlide>
-              );
-            }
-          })}
-        </Swiper>
-        <Swiper
-          //   spaceBetween={4}
-          slidesPerView={1}
-          breakpoints={{
-            1030: {
-              slidesPerView: 2,
-              centeredSlides: false,
-            },
-          }}
-          navigation={true}
-          modules={[Navigation]}
-          className={`mySwiper ${activeTab == "SEO" ? "block" : "hidden"}`}
-        >
-          {HomePortfolioData.map((lan, index) => {
-            if (language === lan.lang) {
-              return (
-                <SwiperSlide
-                  key={index}
-                  className={`${lan.tip === "SEO" ? "" : "hidden"}`}
-                >
-                  <img
-                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
-                    src={lan.img}
-                    alt="Img"
-                  />
-                  <p>{lan.title}</p>
-                </SwiperSlide>
-              );
-            }
-          })}
-        </Swiper>
-        <Swiper
-          //   spaceBetween={4}
-          slidesPerView={1}
-          breakpoints={{
-            1030: {
-              slidesPerView: 2,
-              centeredSlides: false,
+              // centeredSlides: true,
             },
           }}
           navigation={true}
@@ -437,26 +362,171 @@ const HomePortfolio = ({ language, setLanguage }) => {
                   key={index}
                   className={`${
                     lan.tip === "Mobile development" ? "" : "hidden"
-                  }`}
+                  } `}
                 >
-                  <img
-                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
-                    src={lan.img}
-                    alt="Img"
-                  />
-                  <p>{lan.title}</p>
+                  <div className="relative w-full max-w-[523px] mx-auto h-full max-h-[260px]">
+                    <img
+                      className="w-full max-w-[523px] mx-auto h-full max-h-[260px]"
+                      src={lan.img}
+                      alt="Img"
+                    />
+                    <p className="absolute text-xs leading-5 rounded-tl-3xl rounded-r-3xl top-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.title}
+                    </p>
+                    <p className="absolute text-xs leading-5 rounded-rt-3xl rounded-l-3xl  bottom-0 right-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.text}
+                    </p>
+                  </div>
                 </SwiperSlide>
               );
             }
           })}
         </Swiper>
         <Swiper
-          //   spaceBetween={4}
+          spaceBetween={10}
           slidesPerView={1}
+          onInit={(ev) => {
+            set_swiper(ev);
+          }}
           breakpoints={{
-            1030: {
+            950: {
               slidesPerView: 2,
-              centeredSlides: false,
+              // centeredSlides: true,
+            },
+          }}
+          navigation={true}
+          modules={[Navigation]}
+          className={`mySwiper ${
+            activeTab == "Bot development" ? "block" : "hidden"
+          }`}
+        >
+          {HomePortfolioData.map((lan, index) => {
+            if (language === lan.lang) {
+              return (
+                <SwiperSlide
+                  key={index}
+                  className={`${
+                    lan.tip === "Bot development" ? "" : "hidden"
+                  } `}
+                >
+                  <div className="relative w-full max-w-[523px] mx-auto h-full max-h-[260px]">
+                    <img
+                      className="w-full max-w-[523px] mx-auto h-full max-h-[260px]"
+                      src={lan.img}
+                      alt="Img"
+                    />
+                    <p className="absolute text-xs leading-5 rounded-tl-3xl rounded-r-3xl top-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.title}
+                    </p>
+                    <p className="absolute text-xs leading-5 rounded-rt-3xl rounded-l-3xl  bottom-0 right-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.text}
+                    </p>
+                  </div>
+                </SwiperSlide>
+              );
+            }
+          })}
+        </Swiper>
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          onInit={(ev) => {
+            set_swiper(ev);
+          }}
+          breakpoints={{
+            950: {
+              slidesPerView: 2,
+              // centeredSlides: true,
+            },
+          }}
+          navigation={true}
+          modules={[Navigation]}
+          className={`mySwiper ${
+            activeTab == "SMM" ? "block" : "hidden"
+          }`}
+        >
+          {HomePortfolioData.map((lan, index) => {
+            if (language === lan.lang) {
+              return (
+                <SwiperSlide
+                  key={index}
+                  className={`${
+                    lan.tip === "SMM" ? "" : "hidden"
+                  } `}
+                >
+                  <div className="relative w-full max-w-[523px] mx-auto h-full max-h-[260px]">
+                    <img
+                      className="w-full max-w-[523px] mx-auto h-full max-h-[260px]"
+                      src={lan.img}
+                      alt="Img"
+                    />
+                    <p className="absolute text-xs leading-5 rounded-tl-3xl rounded-r-3xl top-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.title}
+                    </p>
+                    <p className="absolute text-xs leading-5 rounded-rt-3xl rounded-l-3xl  bottom-0 right-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.text}
+                    </p>
+                  </div>
+                </SwiperSlide>
+              );
+            }
+          })}
+        </Swiper>
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          onInit={(ev) => {
+            set_swiper(ev);
+          }}
+          breakpoints={{
+            950: {
+              slidesPerView: 2,
+              // centeredSlides: true,
+            },
+          }}
+          navigation={true}
+          modules={[Navigation]}
+          className={`mySwiper ${
+            activeTab == "SEO" ? "block" : "hidden"
+          }`}
+        >
+          {HomePortfolioData.map((lan, index) => {
+            if (language === lan.lang) {
+              return (
+                <SwiperSlide
+                  key={index}
+                  className={`${
+                    lan.tip === "SEO" ? "" : "hidden"
+                  } `}
+                >
+                  <div className="relative w-full max-w-[523px] mx-auto h-full max-h-[260px]">
+                    <img
+                      className="w-full max-w-[523px] mx-auto h-full max-h-[260px]"
+                      src={lan.img}
+                      alt="Img"
+                    />
+                    <p className="absolute text-xs leading-5 rounded-tl-3xl rounded-r-3xl top-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.title}
+                    </p>
+                    <p className="absolute text-xs leading-5 rounded-rt-3xl rounded-l-3xl  bottom-0 right-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.text}
+                    </p>
+                  </div>
+                </SwiperSlide>
+              );
+            }
+          })}
+        </Swiper>
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          onInit={(ev) => {
+            set_swiper(ev);
+          }}
+          breakpoints={{
+            950: {
+              slidesPerView: 2,
+              // centeredSlides: true,
             },
           }}
           navigation={true}
@@ -472,19 +542,62 @@ const HomePortfolio = ({ language, setLanguage }) => {
                   key={index}
                   className={`${
                     lan.tip === "contextual advertising" ? "" : "hidden"
-                  }`}
+                  } `}
                 >
-                  <img
-                    className="mb-6 w-full max-w-[523px] h-full max-h-[260px]"
-                    src={lan.img}
-                    alt="Img"
-                  />
-                  <p>{lan.title}</p>
+                  <div className="relative w-full max-w-[523px] mx-auto h-full max-h-[260px]">
+                    <img
+                      className="w-full max-w-[523px] mx-auto h-full max-h-[260px]"
+                      src={lan.img}
+                      alt="Img"
+                    />
+                    <p className="absolute text-xs leading-5 rounded-tl-3xl rounded-r-3xl top-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.title}
+                    </p>
+                    <p className="absolute text-xs leading-5 rounded-rt-3xl rounded-l-3xl  bottom-0 right-0 text-white py-1 px-2.5 bg-#040D12/[60%] ">
+                      {lan.text}
+                    </p>
+                  </div>
                 </SwiperSlide>
               );
             }
           })}
         </Swiper>
+          {/* uzb */}
+        <div className={`mt-8 flex items-center justify-between ${language === "ru" ? "" : "hidden"}`}>
+          <button onClick={prevSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
+            Назад
+          </button>
+          <Link className="text-#9F95FF text-2xl leading-8">
+            Смотреть все проекты
+          </Link>
+          <button onClick={nextSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
+            Далее
+          </button>
+        </div>
+        {/* eng */}
+        <div className={`mt-8 flex items-center justify-between ${language === "eng" ? "" : "hidden"}`}>
+          <button onClick={prevSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
+            Назад
+          </button>
+          <Link className="text-#9F95FF text-2xl leading-8">
+            Смотреть все проекты
+          </Link>
+          <button onClick={nextSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
+            Далее
+          </button>
+        </div>
+        {/* uzb */}
+        <div className={`mt-8 flex items-center justify-between ${language === "uzb" ? "" : "hidden"}`}>
+          <button onClick={prevSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
+            Назад
+          </button>
+          <Link className="text-#9F95FF text-2xl leading-8">
+            Смотреть все проекты
+          </Link>
+          <button onClick={nextSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
+            Далее
+          </button>
+        </div>
       </div>
     </section>
   );
