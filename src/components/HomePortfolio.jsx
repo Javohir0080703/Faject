@@ -11,11 +11,26 @@ import { Link } from "react-router-dom";
 const HomePortfolio = ({ language, setLanguage }) => {
   const [activeTab, setActiveTab] = useState();
   const [custom_swiper, set_swiper] = useState({});
+  const [custom_swiper1, set_swiper1] = useState({});
+  const [custom_swiper2, set_swiper2] = useState({});
+  const [custom_swiper3, set_swiper3] = useState({});
+  const [custom_swiper4, set_swiper4] = useState({});
+  const [custom_swiper5, set_swiper5] = useState({});
   const nextSlide = () => {
     custom_swiper.slideNext();
+    custom_swiper1.slideNext();
+    custom_swiper2.slideNext();
+    custom_swiper3.slideNext();
+    custom_swiper4.slideNext();
+    custom_swiper5.slideNext();
   };
   const prevSlide = () => {
     custom_swiper.slidePrev();
+    custom_swiper1.slidePrev();
+    custom_swiper2.slidePrev();
+    custom_swiper3.slidePrev();
+    custom_swiper4.slidePrev();
+    custom_swiper5.slidePrev();
   };
 
   useEffect(() => {
@@ -142,7 +157,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
           </ul>
           {/* eng */}
           <ul
-            className={`${
+            className={` ${
               language === "eng" ? "flex" : "hidden"
             }   items-center justify-between scroll-container whitespace-nowrap mb-5 space-x-1 pb-3`}
           >
@@ -155,7 +170,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
                     : "border-white border-2"
                 }`}
               >
-                Разработка веб-сайта {WebsiteDevelopment}
+                Website development {WebsiteDevelopment}
               </button>
             </li>
             <li>
@@ -167,7 +182,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
                     : "border-white border-2 "
                 }`}
               >
-                Разработка бота {BotDevelopment}
+                BotDevelopment {BotDevelopment}
               </button>
             </li>
             <li>
@@ -199,7 +214,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
                     : "border-white border-2"
                 }`}
               >
-                Мобильная разработка {MobileDevelopment}
+                MobileDevelopment {MobileDevelopment}
               </button>
             </li>
             <li>
@@ -211,7 +226,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
                     : "border-white border-2"
                 }`}
               >
-                Контекстная реклама {contextualAdvertising}
+                Contextual Advertising {contextualAdvertising}
               </button>
             </li>
           </ul>
@@ -230,7 +245,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
                     : "border-white border-2"
                 }`}
               >
-                Разработка веб-сайта {WebsiteDevelopment}
+                Veb-sayt ishlab chiqish {WebsiteDevelopment}
               </button>
             </li>
             <li>
@@ -242,7 +257,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
                     : "border-white border-2 "
                 }`}
               >
-                Разработка бота {BotDevelopment}
+                Botni rivojlantirish {BotDevelopment}
               </button>
             </li>
             <li>
@@ -274,7 +289,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
                     : "border-white border-2"
                 }`}
               >
-                Мобильная разработка {MobileDevelopment}
+                Mobil rivojlanish {MobileDevelopment}
               </button>
             </li>
             <li>
@@ -286,7 +301,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
                     : "border-white border-2"
                 }`}
               >
-                Контекстная реклама {contextualAdvertising}
+                kontekstli reklama {contextualAdvertising}
               </button>
             </li>
           </ul>
@@ -295,11 +310,12 @@ const HomePortfolio = ({ language, setLanguage }) => {
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
+          // loop={true}
           onInit={(ev) => {
             set_swiper(ev);
           }}
           breakpoints={{
-            950: {
+            750: {
               slidesPerView: 2,
               // centeredSlides: true,
             },
@@ -337,11 +353,81 @@ const HomePortfolio = ({ language, setLanguage }) => {
             }
           })}
         </Swiper>
+        <div
+          className={`${activeTab === "Website development" ? "" : "hidden"}`}
+        >
+          {/* ru */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "ru" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Назад
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Смотреть все проекты
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Далее
+            </button>
+          </div>
+          {/* eng */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "eng" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Back
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              View all projects
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Next
+            </button>
+          </div>
+          {/* uzb */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "uzb" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Orqaga
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Barcha loyihalarni ko'rish
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Keyingi
+            </button>
+          </div>
+        </div>
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
           onInit={(ev) => {
-            set_swiper(ev);
+            set_swiper1(ev);
           }}
           breakpoints={{
             950: {
@@ -382,11 +468,81 @@ const HomePortfolio = ({ language, setLanguage }) => {
             }
           })}
         </Swiper>
+        <div
+          className={`${activeTab === "Mobile development" ? "" : "hidden"}`}
+        >
+          {/* ru */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "ru" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Назад
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Смотреть все проекты
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Далее
+            </button>
+          </div>
+          {/* eng */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "eng" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Back
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              View all projects
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Next
+            </button>
+          </div>
+          {/* uzb */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "uzb" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Orqaga
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Barcha loyihalarni ko'rish
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Keyingi
+            </button>
+          </div>
+        </div>
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
           onInit={(ev) => {
-            set_swiper(ev);
+            set_swiper2(ev);
           }}
           breakpoints={{
             950: {
@@ -427,11 +583,79 @@ const HomePortfolio = ({ language, setLanguage }) => {
             }
           })}
         </Swiper>
+        <div className={`${activeTab === "Bot development" ? "" : "hidden"}`}>
+          {/* ru */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "ru" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Назад
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Смотреть все проекты
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Далее
+            </button>
+          </div>
+          {/* eng */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "eng" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Back
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              View all projects
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Next
+            </button>
+          </div>
+          {/* uzb */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "uzb" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Orqaga
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Barcha loyihalarni ko'rish
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Keyingi
+            </button>
+          </div>
+        </div>
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
           onInit={(ev) => {
-            set_swiper(ev);
+            set_swiper3(ev);
           }}
           breakpoints={{
             950: {
@@ -441,18 +665,14 @@ const HomePortfolio = ({ language, setLanguage }) => {
           }}
           navigation={true}
           modules={[Navigation]}
-          className={`mySwiper ${
-            activeTab == "SMM" ? "block" : "hidden"
-          }`}
+          className={`mySwiper ${activeTab == "SMM" ? "block" : "hidden"}`}
         >
           {HomePortfolioData.map((lan, index) => {
             if (language === lan.lang) {
               return (
                 <SwiperSlide
                   key={index}
-                  className={`${
-                    lan.tip === "SMM" ? "" : "hidden"
-                  } `}
+                  className={`${lan.tip === "SMM" ? "" : "hidden"} `}
                 >
                   <div className="relative w-full max-w-[523px] mx-auto h-full max-h-[260px]">
                     <img
@@ -472,11 +692,79 @@ const HomePortfolio = ({ language, setLanguage }) => {
             }
           })}
         </Swiper>
+        <div className={`${activeTab === "SMM" ? "" : "hidden"}`}>
+          {/* ru */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "ru" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Назад
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Смотреть все проекты
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Далее
+            </button>
+          </div>
+          {/* eng */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "eng" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Back
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              View all projects
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Next
+            </button>
+          </div>
+          {/* uzb */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "uzb" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Orqaga
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Barcha loyihalarni ko'rish
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Keyingi
+            </button>
+          </div>
+        </div>
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
           onInit={(ev) => {
-            set_swiper(ev);
+            set_swiper4(ev);
           }}
           breakpoints={{
             950: {
@@ -486,18 +774,14 @@ const HomePortfolio = ({ language, setLanguage }) => {
           }}
           navigation={true}
           modules={[Navigation]}
-          className={`mySwiper ${
-            activeTab == "SEO" ? "block" : "hidden"
-          }`}
+          className={`mySwiper ${activeTab == "SEO" ? "block" : "hidden"}`}
         >
           {HomePortfolioData.map((lan, index) => {
             if (language === lan.lang) {
               return (
                 <SwiperSlide
                   key={index}
-                  className={`${
-                    lan.tip === "SEO" ? "" : "hidden"
-                  } `}
+                  className={`${lan.tip === "SEO" ? "" : "hidden"} `}
                 >
                   <div className="relative w-full max-w-[523px] mx-auto h-full max-h-[260px]">
                     <img
@@ -517,11 +801,79 @@ const HomePortfolio = ({ language, setLanguage }) => {
             }
           })}
         </Swiper>
+        <div className={`${activeTab === "SEO" ? "" : "hidden"}`}>
+          {/* ru */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "ru" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Назад
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Смотреть все проекты
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Далее
+            </button>
+          </div>
+          {/* eng */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "eng" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Back
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              View all projects
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Next
+            </button>
+          </div>
+          {/* uzb */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "uzb" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Orqaga
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Barcha loyihalarni ko'rish
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Keyingi
+            </button>
+          </div>
+        </div>
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
           onInit={(ev) => {
-            set_swiper(ev);
+            set_swiper5(ev);
           }}
           breakpoints={{
             950: {
@@ -562,41 +914,77 @@ const HomePortfolio = ({ language, setLanguage }) => {
             }
           })}
         </Swiper>
+        <div
+          className={`${
+            activeTab === "contextual advertisingt" ? "" : "hidden"
+          }`}
+        >
+          {/* ru */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "ru" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Назад
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Смотреть все проекты
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Далее
+            </button>
+          </div>
+          {/* eng */}
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "eng" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Back
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              View all projects
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Next
+            </button>
+          </div>
           {/* uzb */}
-        <div className={`mt-8 flex items-center justify-between ${language === "ru" ? "" : "hidden"}`}>
-          <button onClick={prevSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
-            Назад
-          </button>
-          <Link className="text-#9F95FF text-2xl leading-8">
-            Смотреть все проекты
-          </Link>
-          <button onClick={nextSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
-            Далее
-          </button>
-        </div>
-        {/* eng */}
-        <div className={`mt-8 flex items-center justify-between ${language === "eng" ? "" : "hidden"}`}>
-          <button onClick={prevSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
-            Назад
-          </button>
-          <Link className="text-#9F95FF text-2xl leading-8">
-            Смотреть все проекты
-          </Link>
-          <button onClick={nextSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
-            Далее
-          </button>
-        </div>
-        {/* uzb */}
-        <div className={`mt-8 flex items-center justify-between ${language === "uzb" ? "" : "hidden"}`}>
-          <button onClick={prevSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
-            Назад
-          </button>
-          <Link className="text-#9F95FF text-2xl leading-8">
-            Смотреть все проекты
-          </Link>
-          <button onClick={nextSlide} className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] ">
-            Далее
-          </button>
+          <div
+            className={`mt-8 flex items-center justify-between ${
+              language === "uzb" ? "" : "hidden"
+            }`}
+          >
+            <button
+              onClick={prevSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Orqaga
+            </button>
+            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+              Barcha loyihalarni ko'rish
+            </Link>
+            <button
+              onClick={nextSlide}
+              className="py-1.5 px-4 border-white font-semibold text-base leading-8 text-white opacity-[35%] border-2 rounded-[22px] "
+            >
+              Keyingi
+            </button>
+          </div>
         </div>
       </div>
     </section>

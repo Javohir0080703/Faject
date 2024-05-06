@@ -20,7 +20,14 @@ export default {
       },
       screens:{
         "860px":"860px",
-        "1030px":"1030px"
+        "1030px":"1030px",
+        "531px":"531px"
+      },
+      fontSize:{
+        "64px":"64px"
+      },
+      lineHeight:{
+        "78px":"78px"
       }
     },
   },
