@@ -837,15 +837,4 @@ export const lastReporterData = [
   },
 ];
 
-// export const AccardionData = [
-//   // ru
 
-//   {
-//     title: "Как долго разрабатывается сайт с нуля?",
-//     language: "ru",
-//     text: {
-//       ""
-//     },
-    
-//   },
-// ];
