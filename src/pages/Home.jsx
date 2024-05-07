@@ -6,6 +6,8 @@ import HomePortfolio from "../components/HomePortfolio";
 import HomeReviews from "../components/HomeReviews";
 import AboutCompany from "../components/AboutCompany";
 import LastReporter from "../components/LastReporter";
+import Accardion from "../components/Accardion";
+import Cta from "../components/Cta";
 
 const Home = ({ language, setLanguage }) => {
   return (
@@ -17,6 +19,8 @@ const Home = ({ language, setLanguage }) => {
       <HomeReviews language={language} setLanguage={setLanguage} />
       <AboutCompany language={language} setLanguage={setLanguage} />
       <LastReporter language={language} setLanguage={setLanguage} />
+      {/* <Accardion language={language} setLanguage={setLanguage} /> */}
+      <Cta language={language} setLanguage={setLanguage} />
     </>
   );
 };

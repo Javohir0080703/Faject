@@ -23,7 +23,8 @@ export default {
         "1030px":"1030px",
         "531px":"531px",
         "440px":"440px",
-        "580px":"580px"
+        "580px":"580px",
+        "1120px":"1120px",
       },
       fontSize:{
         "64px":"64px",
