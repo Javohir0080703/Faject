@@ -1,6 +1,11 @@
 // import img1 from "./img/popularservicesimg1.png";
 import img2 from "./img/HomePortfolio.png";
-import img1 from '../src/img/HomePortfolio2.png'
+import img1 from "../src/img/HomePortfolio2.png";
+import lastReporterImg1 from "./img/lastReporterImg1.png";
+const today = new Date();
+const formattedDate = `${today.getDate()}.0${
+  today.getMonth() + 1
+}.${today.getFullYear()}`;
 export const HomePortfolioData = [
   // ru
   {
@@ -536,13 +541,298 @@ export const HomePortfolioData = [
 ];
 
 export const HomeReviewsData = [
+  // ru
   {
-    title:"Разработка бота",
-    text:"Бот, разработанный веб-студией, значительно упростил работу моих сотрудников и позволил им сосредоточиться на более важных задачах. Я очень доволен результатом и рекомендую эту веб-студию всем, кто ищет надежного партнера для создания эффективного бота. Особенно хочу отметить профессионализм и опыт команды разработчиков. Они не только создали мощного и функционального бота, но и научили меня, как правильно его использовать и настраивать.",
-    negativeText:"",
-    plus:"Плюсы",
-    minus:"Минусы",
-    email:"@arcady_doctor",
-    lang:"ru"
-  }
-]
+    title: "Разработка бота",
+    text: "Бот, разработанный веб-студией, значительно упростил работу моих сотрудников и позволил им сосредоточиться на более важных задачах. Я очень доволен результатом и рекомендую эту веб-студию всем, кто ищет надежного партнера для создания эффективного бота. Особенно хочу отметить профессионализм и опыт команды разработчиков. Они не только создали мощного и функционального бота, но и научили меня, как правильно его использовать и настраивать.",
+    negativeText: "",
+    plus: "Плюсы",
+    minus: "Минусы",
+    email: "@arcady_doctor",
+    default: "Не обнаружил",
+    lang: "ru",
+  },
+  {
+    title: "Разработка веб-сайт",
+    text: "Бот, разработанный веб-студией, значительно упростил работу моих сотрудников и позволил им сосредоточиться на более важных задачах. Я очень доволен результатом и рекомендую эту веб-студию всем, кто ищет надежного партнера для создания эффективного бота. Особенно хочу отметить профессионализм и опыт команды разработчиков. Они не только создали мощного и функционального бота, но и научили меня, как правильно его использовать и настраивать.",
+    negativeText: "",
+    plus: "Плюсы",
+    minus: "Минусы",
+    email: "@arcady_doctor",
+    default: "Не обнаружил",
+    lang: "ru",
+  },
+  {
+    title: "Разработка бота",
+    text: "Бот, разработанный веб-студией, значительно упростил работу моих сотрудников и позволил им сосредоточиться на более важных задачах. Я очень доволен результатом и рекомендую эту веб-студию всем, кто ищет надежного партнера для создания эффективного бота. Особенно хочу отметить профессионализм и опыт команды разработчиков. Они не только создали мощного и функционального бота, но и научили меня, как правильно его использовать и настраивать.",
+    negativeText: "",
+    plus: "Плюсы",
+    minus: "Минусы",
+    email: "@arcady_doctor",
+    default: "Не обнаружил",
+    lang: "ru",
+  },
+  {
+    title: "Разработка бота",
+    text: "Бот, разработанный веб-студией, значительно упростил работу моих сотрудников и позволил им сосредоточиться на более важных задачах. Я очень доволен результатом и рекомендую эту веб-студию всем, кто ищет надежного партнера для создания эффективного бота. Особенно хочу отметить профессионализм и опыт команды разработчиков. Они не только создали мощного и функционального бота, но и научили меня, как правильно его использовать и настраивать.",
+    negativeText: "",
+    plus: "Плюсы",
+    minus: "Минусы",
+    email: "@arcady_doctor",
+    default: "Не обнаружил",
+    lang: "ru",
+  },
+  {
+    title: "SEO",
+    text: "Бот, разработанный веб-студией, значительно упростил работу моих сотрудников и позволил им сосредоточиться на более важных задачах. Я очень доволен результатом и рекомендую эту веб-студию всем, кто ищет надежного партнера для создания эффективного бота. Особенно хочу отметить профессионализм и опыт команды разработчиков. Они не только создали мощного и функционального бота, но и научили меня, как правильно его использовать и настраивать.",
+    negativeText: "",
+    plus: "Плюсы",
+    minus: "Минусы",
+    email: "@arcady_doctor",
+    default: "Не обнаружил",
+    lang: "ru",
+  },
+  {
+    title: "Разработка бота",
+    text: "Бот, разработанный веб-студией, значительно упростил работу моих сотрудников и позволил им сосредоточиться на более важных задачах. Я очень доволен результатом и рекомендую эту веб-студию всем, кто ищет надежного партнера для создания эффективного бота. Особенно хочу отметить профессионализм и опыт команды разработчиков. Они не только создали мощного и функционального бота, но и научили меня, как правильно его использовать и настраивать.",
+    negativeText: "",
+    plus: "Плюсы",
+    minus: "Минусы",
+    email: "@arcady_doctor",
+    default: "Не обнаружил",
+    lang: "ru",
+  },
+  // eng
+  {
+    title: "Bot development",
+    text: "The bot developed by the web studio greatly simplified the work of my employees and allowed them to focus on more important tasks. I am very pleased with the result and recommend this web studio to anyone who is looking for a reliable partner to create an effective bot. I especially want to note the professionalism and experience of the development team. They not only created a powerful and functional bot, but also taught me how to properly use and configure it.",
+    negativeText: "",
+    plus: "pros",
+    minus: "Minuses",
+    email: "@arcady_doctor",
+    default: "Didn't find it",
+    lang: "eng",
+  },
+  {
+    title: "Bot development",
+    text: "The bot developed by the web studio greatly simplified the work of my employees and allowed them to focus on more important tasks. I am very pleased with the result and recommend this web studio to anyone who is looking for a reliable partner to create an effective bot. I especially want to note the professionalism and experience of the development team. They not only created a powerful and functional bot, but also taught me how to properly use and configure it.",
+    negativeText: "",
+    plus: "pros",
+    minus: "Minuses",
+    email: "@arcady_doctor",
+    default: "Didn't find it",
+    lang: "eng",
+  },
+  {
+    title: "Bot development",
+    text: "The bot developed by the web studio greatly simplified the work of my employees and allowed them to focus on more important tasks. I am very pleased with the result and recommend this web studio to anyone who is looking for a reliable partner to create an effective bot. I especially want to note the professionalism and experience of the development team. They not only created a powerful and functional bot, but also taught me how to properly use and configure it.",
+    negativeText: "",
+    plus: "pros",
+    minus: "Minuses",
+    email: "@arcady_doctor",
+    default: "Didn't find it",
+    lang: "eng",
+  },
+  {
+    title: "Bot development",
+    text: "The bot developed by the web studio greatly simplified the work of my employees and allowed them to focus on more important tasks. I am very pleased with the result and recommend this web studio to anyone who is looking for a reliable partner to create an effective bot. I especially want to note the professionalism and experience of the development team. They not only created a powerful and functional bot, but also taught me how to properly use and configure it.",
+    negativeText: "",
+    plus: "pros",
+    minus: "Minuses",
+    email: "@arcady_doctor",
+    default: "Didn't find it",
+    lang: "eng",
+  },
+  {
+    title: "Bot development",
+    text: "The bot developed by the web studio greatly simplified the work of my employees and allowed them to focus on more important tasks. I am very pleased with the result and recommend this web studio to anyone who is looking for a reliable partner to create an effective bot. I especially want to note the professionalism and experience of the development team. They not only created a powerful and functional bot, but also taught me how to properly use and configure it.",
+    negativeText: "",
+    plus: "pros",
+    minus: "Minuses",
+    email: "@arcady_doctor",
+    default: "Didn't find it",
+    lang: "eng",
+  },
+  {
+    title: "Bot development",
+    text: "The bot developed by the web studio greatly simplified the work of my employees and allowed them to focus on more important tasks. I am very pleased with the result and recommend this web studio to anyone who is looking for a reliable partner to create an effective bot. I especially want to note the professionalism and experience of the development team. They not only created a powerful and functional bot, but also taught me how to properly use and configure it.",
+    negativeText: "",
+    plus: "pros",
+    minus: "Minuses",
+    email: "@arcady_doctor",
+    default: "Didn't find it",
+    lang: "eng",
+  },
+  // uzb
+  {
+    title: "Botni rivojlantirish",
+    text: "Veb-studiya tomonidan ishlab chiqilgan bot mening xodimlarim ishini ancha soddalashtirdi va ularga e'tiborini yanada muhimroq vazifalarga qaratish imkonini berdi. Natijadan juda mamnunman va samarali bot yaratish uchun ishonchli hamkor izlayotgan har bir kishiga ushbu veb-studiyani tavsiya qilaman. Men, ayniqsa, rivojlanish guruhining professionalligi va tajribasini ta'kidlamoqchiman. Ular nafaqat kuchli va funktsional bot yaratdilar, balki uni qanday qilib to'g'ri ishlatish va sozlashni ham o'rgatishdi.",
+    negativeText: "",
+    plus: "Pluslar",
+    minus: "Minuslar",
+    email: "@arcady_doctor",
+    default: "Topilmadi",
+    lang: "uzb",
+  },
+  {
+    title: "Botni rivojlantirish",
+    text: "Veb-studiya tomonidan ishlab chiqilgan bot mening xodimlarim ishini ancha soddalashtirdi va ularga e'tiborini yanada muhimroq vazifalarga qaratish imkonini berdi. Natijadan juda mamnunman va samarali bot yaratish uchun ishonchli hamkor izlayotgan har bir kishiga ushbu veb-studiyani tavsiya qilaman. Men, ayniqsa, rivojlanish guruhining professionalligi va tajribasini ta'kidlamoqchiman. Ular nafaqat kuchli va funktsional bot yaratdilar, balki uni qanday qilib to'g'ri ishlatish va sozlashni ham o'rgatishdi.",
+    negativeText: "",
+    plus: "Pluslar",
+    minus: "Minuslar",
+    email: "@arcady_doctor",
+    default: "Topilmadi",
+    lang: "uzb",
+  },
+  {
+    title: "Botni rivojlantirish",
+    text: "Veb-studiya tomonidan ishlab chiqilgan bot mening xodimlarim ishini ancha soddalashtirdi va ularga e'tiborini yanada muhimroq vazifalarga qaratish imkonini berdi. Natijadan juda mamnunman va samarali bot yaratish uchun ishonchli hamkor izlayotgan har bir kishiga ushbu veb-studiyani tavsiya qilaman. Men, ayniqsa, rivojlanish guruhining professionalligi va tajribasini ta'kidlamoqchiman. Ular nafaqat kuchli va funktsional bot yaratdilar, balki uni qanday qilib to'g'ri ishlatish va sozlashni ham o'rgatishdi.",
+    negativeText: "",
+    plus: "Pluslar",
+    minus: "Minuslar",
+    email: "@arcady_doctor",
+    default: "Topilmadi",
+    lang: "uzb",
+  },
+  {
+    title: "Botni rivojlantirish",
+    text: "Veb-studiya tomonidan ishlab chiqilgan bot mening xodimlarim ishini ancha soddalashtirdi va ularga e'tiborini yanada muhimroq vazifalarga qaratish imkonini berdi. Natijadan juda mamnunman va samarali bot yaratish uchun ishonchli hamkor izlayotgan har bir kishiga ushbu veb-studiyani tavsiya qilaman. Men, ayniqsa, rivojlanish guruhining professionalligi va tajribasini ta'kidlamoqchiman. Ular nafaqat kuchli va funktsional bot yaratdilar, balki uni qanday qilib to'g'ri ishlatish va sozlashni ham o'rgatishdi.",
+    negativeText: "",
+    plus: "Pluslar",
+    minus: "Minuslar",
+    email: "@arcady_doctor",
+    default: "Topilmadi",
+    lang: "uzb",
+  },
+  {
+    title: "Botni rivojlantirish",
+    text: "Veb-studiya tomonidan ishlab chiqilgan bot mening xodimlarim ishini ancha soddalashtirdi va ularga e'tiborini yanada muhimroq vazifalarga qaratish imkonini berdi. Natijadan juda mamnunman va samarali bot yaratish uchun ishonchli hamkor izlayotgan har bir kishiga ushbu veb-studiyani tavsiya qilaman. Men, ayniqsa, rivojlanish guruhining professionalligi va tajribasini ta'kidlamoqchiman. Ular nafaqat kuchli va funktsional bot yaratdilar, balki uni qanday qilib to'g'ri ishlatish va sozlashni ham o'rgatishdi.",
+    negativeText: "",
+    plus: "Pluslar",
+    minus: "Minuslar",
+    email: "@arcady_doctor",
+    default: "Topilmadi",
+    lang: "uzb",
+  },
+  {
+    title: "Botni rivojlantirish",
+    text: "Veb-studiya tomonidan ishlab chiqilgan bot mening xodimlarim ishini ancha soddalashtirdi va ularga e'tiborini yanada muhimroq vazifalarga qaratish imkonini berdi. Natijadan juda mamnunman va samarali bot yaratish uchun ishonchli hamkor izlayotgan har bir kishiga ushbu veb-studiyani tavsiya qilaman. Men, ayniqsa, rivojlanish guruhining professionalligi va tajribasini ta'kidlamoqchiman. Ular nafaqat kuchli va funktsional bot yaratdilar, balki uni qanday qilib to'g'ri ishlatish va sozlashni ham o'rgatishdi.",
+    negativeText: "",
+    plus: "Pluslar",
+    minus: "Minuslar",
+    email: "@arcady_doctor",
+    default: "Topilmadi",
+    lang: "uzb",
+  },
+];
+
+export const lastReporterData = [
+  // ru
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "ru"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "ru"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "ru"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "ru"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "ru"
+  },
+  // eng
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "eng"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "eng"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "eng"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "eng"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "eng"
+  },
+  // uzb
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "uzb"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "uzb"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "uzb"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "uzb"
+  },
+  {
+    title: "Новая услуга - разработка бота",
+    text: "Наша веб-студия предлагает новую услугу - разработку бота для вашего бизнеса. Мы создадим интеллектуального помощника, который будет автоматизировать рутинные процессы, обрабатывать большие объемы данных и улучшать клиентский опыт. С нашим ботом вы сможете оптимизировать работу компании и сэкономить время сотрудников. Обращайтесь к нам для создания эффективного и надежного бота!",
+    img: lastReporterImg1,
+    data: formattedDate ,
+    lang: "uzb"
+  },
+];
