@@ -120,7 +120,7 @@ const HomeReviews = ({ language, setLanguage }) => {
             titleLang.map((lan, index)=>{
               if(language === lan.lang){
                 return(
-                  <Link key={index} className=" px-4 border-2 border-white rounded-3xl text-white">{lan.allLink}</Link>
+                  <Link key={index} className="py-1.5 px-4 border-2 border-white rounded-3xl text-white">{lan.allLink}</Link>
                 )
               }
             })
