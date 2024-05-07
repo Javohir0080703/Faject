@@ -13,13 +13,13 @@ const LastReporter = ({ language, setLanguage }) => {
       lang: "ru",
     },
     {
-      title: "Последние новости",
-      allLink:"Читать все",
+      title: "Last news",
+      allLink:"Read all",
       lang: "eng",
     },
     {
-      title: "Последние новости",
-      allLink:"Читать все",
+      title: "So'ngi yangiliklar",
+      allLink:"Hammasini o'qing",
       lang: "uzb",
     },
   ];
