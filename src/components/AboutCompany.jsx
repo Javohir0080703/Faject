@@ -10,11 +10,11 @@ const AboutCompany = ({ language, setLanguage }) => {
       lang: "ru",
     },
     {
-      title: "О компании",
+      title: "About company",
       lang: "eng",
     },
     {
-      title: "О компании",
+      title: "Kompaniya haqida",
       lang: "uzb",
     },
   ]; 
@@ -43,43 +43,43 @@ const AboutCompany = ({ language, setLanguage }) => {
     },
     // eng
     {
-        title:"Совместная работа",
+        title:"Collaboration",
         img: companyImg1,
         lang:"eng"
     },
     {
-        title:"Большой опыт",
+        title:"Great experience",
         img: companyImg2,
         lang:"eng"
     },
     {
-        title:"Большой опыт",
+        title:"Great experience",
         img: companyImg3,
         lang:"eng"
     },
     {
-        title:"Искусственный интеллект",
+        title:"Artificial intelligence",
         img: companyImg4,
         lang:"eng"
     },
     // uzb
     {
-        title:"Совместная работа",
+        title:"Hamkorlik",
         img: companyImg1,
         lang:"uzb"
     },
     {
-        title:"Большой опыт",
+        title:"Ajoyib tajriba",
         img: companyImg2,
         lang:"uzb"
     },
     {
-        title:"Большой опыт",
+        title:"Ajoyib tajriba",
         img: companyImg3,
         lang:"uzb"
     },
     {
-        title:"Искусственный интеллект",
+        title:"Sun'iy intellekt",
         img: companyImg4,
         lang:"uzb"
     },
