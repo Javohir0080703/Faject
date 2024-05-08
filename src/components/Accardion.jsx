@@ -1,6 +1,22 @@
 import React from "react";
-// import { AccardionData } from "../data";
+import accardionOpen from '../img/accardionOpen.svg'
+import accardionClose from '../img/accardionClose.svg'
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
+import { Link } from "react-router-dom";
+
+function Icon({ id, open }) {
+  return (
+  <img  src={id === open ? accardionClose : accardionOpen} alt="" />
+  );
+}
+import { AccardionData } from "../data";
 const Accardion = ({ language, setLanguage }) => {
+  const [open, setOpen] = React.useState(0);
+  const handleOpen = (value) => setOpen(open === value ? 0 : value);
   const titleLang = [
     {
       title: "FAQ",
@@ -31,13 +47,38 @@ const Accardion = ({ language, setLanguage }) => {
           }
         })}
 
-        {
-            AccardionData.map((lan, index)=>{
-                return(
-                    <p>{lan.text["Аудит и разбор сайта"]}</p>
-                )
-            })
-        }
+        <div>
+          {AccardionData.map((faq, index) => {
+            if (language === faq.lang) {
+              return (
+                <Accordion
+                  key={index}
+                  open={open === index}
+                  icon={<Icon id={index} open={open} />}
+                >
+                  <AccordionHeader
+                    className="text-white text-2xl leading-8 pt-1.5 pl-4 pb-5 border-b-2  border-#9F95FF h-[60px]"
+                    onClick={() => handleOpen(index)}
+                  >
+                    {faq.title}
+                  </AccordionHeader>
+                  <AccordionBody
+                    onClick={() => handleOpen(index)}
+                    className={`font-medium pl-[34px] text-white text-base leading-8  ${
+                      open === index ? "" : "hidden"
+                    }`}
+                  >
+                    <div>
+                      {faq.text.map((e, index) => {
+                        return <p key={index}>{e}</p>;
+                      })}
+                    </div>
+                  </AccordionBody>
+                </Accordion>
+              );
+            }
+          })}
+        </div>
       </div>
     </section>
   );

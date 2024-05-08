@@ -19,7 +19,7 @@ const Home = ({ language, setLanguage }) => {
       <HomeReviews language={language} setLanguage={setLanguage} />
       <AboutCompany language={language} setLanguage={setLanguage} />
       <LastReporter language={language} setLanguage={setLanguage} />
-      {/* <Accardion language={language} setLanguage={setLanguage} /> */}
+      <Accardion language={language} setLanguage={setLanguage} />
       <Cta language={language} setLanguage={setLanguage} />
     </>
   );
