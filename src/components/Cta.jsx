@@ -68,7 +68,7 @@ const Cta = ({ language, setLanguage }) => {
           {CtaData.map((lan, index) => {
             if (language === lan.lang) {
               return (
-                <li className="w-full max-w-[364px]">
+                <li key={index} className="w-full max-w-[364px]">
                   <div className="flex items-center justify-center">
                     <span className="text-white font-semibold 580px:text-64px text-4xl 580px:leading-78px leading-10">{lan.belgi}</span>
                     <p

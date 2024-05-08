@@ -8,6 +8,8 @@ import {
 import Home from "./pages/Home";
 import MainLayout from "./layouts/MainLayout";
 import Zayavka from "./components/Zayavka";
+import Documents from "./pages/Documents";
+import Reviews from "./pages/Reviews";
 const App = () => {
   const [language, setLanguage] = useState("ru");
   const router = createBrowserRouter(
@@ -20,10 +22,13 @@ const App = () => {
           element={<Home language={language} setLanguage={setLanguage} />}
         />
         <Route
-          path="apply"
+          path="/apply"
           element={<Zayavka language={language} setLanguage={setLanguage} />}
         />
+        <Route path="/documents" element={<Documents language={language} setLanguage={setLanguage} />} />
+        <Route path="/reviews" element={<Reviews language={language} setLanguage={setLanguage} />} />
       </Route>
+      
     )
   );
   return <RouterProvider router={router} />;

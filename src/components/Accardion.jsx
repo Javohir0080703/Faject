@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function Icon({ id, open }) {
   return (
-  <img  src={id === open ? accardionClose : accardionOpen} alt="" />
+  <img className="750px:min-w-[24px] min-w-[20px]"  src={id === open ? accardionClose : accardionOpen} alt="" />
   );
 }
 import { AccardionData } from "../data";
@@ -39,7 +39,7 @@ const Accardion = ({ language, setLanguage }) => {
             return (
               <h2
                 key={index}
-                className="font-semibold text-64px leading-78px tracking-[-4%] text-white mb-8"
+                className="font-semibold 750px:text-64px text-4xl 750px:leading-78px leading-10 max-750px:text-center tracking-[-4%] text-white mb-8"
               >
                 {lan.title}
               </h2>
@@ -57,14 +57,14 @@ const Accardion = ({ language, setLanguage }) => {
                   icon={<Icon id={index} open={open} />}
                 >
                   <AccordionHeader
-                    className="text-white text-2xl leading-8 pt-1.5 pl-4 pb-5 border-b-2  border-#9F95FF h-[60px]"
+                    className="text-white 950px:text-2xl 750px:text-lg text-sm 750px:leading-8 leading-5 pt-1.5 pl-4 950px:pb-5 pb-3 border-b-2 border-#9F95FF "
                     onClick={() => handleOpen(index)}
                   >
                     {faq.title}
                   </AccordionHeader>
                   <AccordionBody
                     onClick={() => handleOpen(index)}
-                    className={`font-medium pl-[34px] text-white text-base leading-8  ${
+                    className={`font-medium pl-[34px] text-white text-xs 750px:text-base 750px:leading-8 leading-5  ${
                       open === index ? "" : "hidden"
                     }`}
                   >

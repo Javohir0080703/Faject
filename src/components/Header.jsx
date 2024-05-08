@@ -233,12 +233,12 @@ const Header = ({ language, setLanguage }) => {
           >
             <ul className="flex items-center space-x-[26px]">
               <li>
-                <Link
+                <button
                   onClick={openUslugi}
                   className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
                 >
                   Услуги
-                </Link>
+                </button>
               </li>
               <li>
                 <Link className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
@@ -246,12 +246,12 @@ const Header = ({ language, setLanguage }) => {
                 </Link>
               </li>
               <li>
-                <Link
+                <button
                   onClick={openAboutCompany}
                   className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
                 >
                   О компании
-                </Link>
+                </button>
               </li>
             </ul>
           </nav>
@@ -262,12 +262,12 @@ const Header = ({ language, setLanguage }) => {
           >
             <ul className="flex items-center space-x-[26px]">
               <li>
-                <Link
+                <button
                   onClick={openUslugi}
                   className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
                 >
                   Services
-                </Link>
+                </button>
               </li>
               <li>
                 <Link className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
@@ -275,12 +275,12 @@ const Header = ({ language, setLanguage }) => {
                 </Link>
               </li>
               <li>
-                <Link
+                <button
                   onClick={openAboutCompany}
                   className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
                 >
                   About company
-                </Link>
+                </button>
               </li>
             </ul>
           </nav>
@@ -291,12 +291,12 @@ const Header = ({ language, setLanguage }) => {
           >
             <ul className="flex items-center space-x-[26px]">
               <li>
-                <Link
+                <button
                   onClick={openUslugi}
                   className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
                 >
                   Xizmatlar
-                </Link>
+                </button>
               </li>
               <li>
                 <Link className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
@@ -304,12 +304,12 @@ const Header = ({ language, setLanguage }) => {
                 </Link>
               </li>
               <li>
-                <Link
+                <button
                   onClick={openAboutCompany}
                   className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
                 >
                   Kompaniya haqida
-                </Link>
+                </button>
               </li>
             </ul>
           </nav>
@@ -341,7 +341,7 @@ const Header = ({ language, setLanguage }) => {
             })}
           </button>
           <Link
-            to="apply"
+            to="/apply"
             className="py-1.5 px-4 font-semibold text-base text-white bg-#040D12 border-white border-2 rounded-[22px] shadow-HeaderBtn "
           >
             {headerTranslating.map((lan, index) => {
@@ -446,7 +446,7 @@ const Header = ({ language, setLanguage }) => {
           )}
         </div>
         <div className={`860px:hidden block `}>
-          <Link to="apply">
+          <Link to="/apply">
             <svg
               width="49"
               height="38"
@@ -667,6 +667,7 @@ const Header = ({ language, setLanguage }) => {
                 Контакты
               </Link>
               <Link
+              to="/documents"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -710,6 +711,7 @@ const Header = ({ language, setLanguage }) => {
                 Contacts
               </Link>
               <Link
+              to="/documents"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -753,6 +755,7 @@ const Header = ({ language, setLanguage }) => {
                 Kontaktlar
               </Link>
               <Link
+              to="/documents"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -1028,7 +1031,7 @@ const Header = ({ language, setLanguage }) => {
                     <Link className="text-base leading-4 text-white">Блог</Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link to="/documents" className="text-base leading-4 text-white">
                       Документы
                     </Link>
                   </li>
@@ -1065,7 +1068,7 @@ const Header = ({ language, setLanguage }) => {
                     <Link className="text-base leading-4 text-white">Blog</Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link to="/documents" className="text-base leading-4 text-white">
                       Documentation
                     </Link>
                   </li>
@@ -1102,7 +1105,7 @@ const Header = ({ language, setLanguage }) => {
                     <Link className="text-base leading-4 text-white">Blog</Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link to="/documents" className="text-base leading-4 text-white">
                       Hujjatlar
                     </Link>
                   </li>
