@@ -30,15 +30,19 @@ const Header = ({ language, setLanguage }) => {
   };
   const openResponsiveUslugi = () => {
     setResponsiveUslugi(true);
+    setResponsiveAboutCompany(false);
   };
   const closeResponsiveUslugi = () => {
     setResponsiveUslugi(false);
   };
   const openResponsiveAboutCompany = () => {
     setResponsiveAboutCompany(true);
+    // closeResponsiveUslugi()
+    setResponsiveUslugi(false);
   };
   const closeResponsiveAboutCompany = () => {
     setResponsiveAboutCompany(false);
+    // setResponsiveUslugi(false);
   };
   const openHamburger = () => {
     setHambutger(!hamburger);
@@ -655,6 +659,7 @@ const Header = ({ language, setLanguage }) => {
               }`}
             >
               <Link
+                to="/reviews"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -667,7 +672,7 @@ const Header = ({ language, setLanguage }) => {
                 Контакты
               </Link>
               <Link
-              to="/documents"
+                to="/documents"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -699,6 +704,7 @@ const Header = ({ language, setLanguage }) => {
               }`}
             >
               <Link
+                to="/reviews"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -711,7 +717,7 @@ const Header = ({ language, setLanguage }) => {
                 Contacts
               </Link>
               <Link
-              to="/documents"
+                to="/documents"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -743,6 +749,7 @@ const Header = ({ language, setLanguage }) => {
               }`}
             >
               <Link
+                to="/reviews"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -755,7 +762,7 @@ const Header = ({ language, setLanguage }) => {
                 Kontaktlar
               </Link>
               <Link
-              to="/documents"
+                to="/documents"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -787,15 +794,14 @@ const Header = ({ language, setLanguage }) => {
         onClick={() => {
           closeAboutCompany();
           closeUslugi();
-          closeResponsiveAboutCompany();
-          closeResponsiveUslugi();
+          // closeResponsiveAboutCompany();
+          // closeResponsiveUslugi();
         }}
         className={` ${
-          uslugibox ||
-          aboutCompany ||
-          responsiveAboutCompany ||
-          responsiveUslugi
-            ? "overlay"
+          uslugibox || aboutCompany
+            ? // responsiveAboutCompany ||
+              // responsiveUslugi
+              "overlay"
             : "hidden"
         } `}
       ></div>
@@ -830,11 +836,7 @@ const Header = ({ language, setLanguage }) => {
                 </li>
               </ul>
             </nav>
-            <nav
-              className={`${
-                language === "eng" ? "block" : "hidden"
-              }`}
-            >
+            <nav className={`${language === "eng" ? "block" : "hidden"}`}>
               <ul className="flex flex-col items-start space-y-[26px]">
                 <li>
                   <button
@@ -859,11 +861,7 @@ const Header = ({ language, setLanguage }) => {
                 </li>
               </ul>
             </nav>
-            <nav
-              className={`${
-                language === "uzb" ? "block" : "hidden"
-              } `}
-            >
+            <nav className={`${language === "uzb" ? "block" : "hidden"} `}>
               <ul className="flex flex-col items-start space-y-[26px]">
                 <li>
                   <button
@@ -890,37 +888,59 @@ const Header = ({ language, setLanguage }) => {
             </nav>
           </div>
           {responsiveUslugi && (
-            <div>
+            <div className="z-[99999]">
               {/* ru */}
               <div
                 className={`${
-                  language === "ru" ? "block mb-[16px] mt-2.5" : "hidden"
+                  language === "ru" ? "block mb-[16px] mt-2.5 z-50" : "hidden"
                 }`}
               >
                 <ul className="space-y-4">
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Разработка сайта
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">SEO</Link>
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
+                      SEO
+                    </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">SMM</Link>
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
+                      SMM
+                    </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Мобильная разработка
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Разработка бота
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Контекстная реклама
                     </Link>
                   </li>
@@ -929,33 +949,55 @@ const Header = ({ language, setLanguage }) => {
               {/* eng */}
               <div
                 className={`${
-                  language === "eng" ? "block mb-[16px] mt-2.5" : "hidden"
+                  language === "eng" ? "block mb-[16px] mt-2.5 z-50" : "hidden"
                 }`}
               >
                 <ul className="space-y-4">
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Site development
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">SEO</Link>
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
+                      SEO
+                    </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">SMM</Link>
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
+                      SMM
+                    </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Mobile development
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Bot development
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Contextual Advertisin
                     </Link>
                   </li>
@@ -964,33 +1006,55 @@ const Header = ({ language, setLanguage }) => {
               {/* uzb */}
               <div
                 className={`${
-                  language === "uzb" ? "block mb-[16px] mt-2.5" : "hidden"
+                  language === "uzb" ? "block mb-[16px] mt-2.5 z-50" : "hidden"
                 }`}
               >
                 <ul className="space-y-4">
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Saytni ishlab chiqish
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">SEO</Link>
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
+                      SEO
+                    </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">SMM</Link>
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
+                      SMM
+                    </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Mobil rivojlanish
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Botni rivojlantirish
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Kontekstli Reklama
                     </Link>
                   </li>
@@ -999,39 +1063,61 @@ const Header = ({ language, setLanguage }) => {
             </div>
           )}
           {responsiveAboutCompany && (
-            <div>
+            <div className="z-[99999]">
               {/* ru */}
               <div
                 className={`${
                   language === "ru" ? "block mb-[16px] mt-2.5" : "hidden"
                 }`}
               >
-                <ul className="space-y-4">
+                <ul className="space-y-4 ">
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      to="/reviews"
+                      className="text-base leading-4 text-white z-50"
+                    >
                       Отзывы
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Контакты
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Обратная связь
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       О нас
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">Блог</Link>
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
+                      Блог
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/documents" className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      to="/documents"
+                      className="text-base leading-4 text-white"
+                    >
                       Документы
                     </Link>
                   </li>
@@ -1040,35 +1126,57 @@ const Header = ({ language, setLanguage }) => {
               {/* eng */}
               <div
                 className={`${
-                  language === "eng" ? "block mb-[16px] mt-2.5" : "hidden"
+                  language === "eng" ? "block mb-[16px] mt-2.5 z-50" : "hidden"
                 }`}
               >
                 <ul className="space-y-4">
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      to="/reviews"
+                      className="text-base leading-4 text-white"
+                    >
                       Reviews
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Contacts
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Feedback
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       About Us
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">Blog</Link>
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
+                      Blog
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/documents" className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      to="/documents"
+                      className="text-base leading-4 text-white"
+                    >
                       Documentation
                     </Link>
                   </li>
@@ -1077,35 +1185,57 @@ const Header = ({ language, setLanguage }) => {
               {/* uzb */}
               <div
                 className={`${
-                  language === "uzb" ? "block mb-[16px] mt-2.5" : "hidden"
+                  language === "uzb" ? "block mb-[16px] mt-2.5 z-50" : "hidden"
                 }`}
               >
                 <ul className="space-y-4">
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      to="/reviews"
+                      className="text-base leading-4 text-white"
+                    >
                       Sharhlar
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Kontaktlar
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Qayta Aloqa
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
                       Biz haqimizda
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-base leading-4 text-white">Blog</Link>
+                    <Link
+                      onClick={closeHamburger}
+                      className="text-base leading-4 text-white"
+                    >
+                      Blog
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/documents" className="text-base leading-4 text-white">
+                    <Link
+                      onClick={closeHamburger}
+                      to="/documents"
+                      className="text-base leading-4 text-white"
+                    >
                       Hujjatlar
                     </Link>
                   </li>

@@ -37,7 +37,7 @@ body {
 
 .overlay {
   position: fixed;
-  z-index: 1;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
@@ -85,6 +85,9 @@ body {
   border-radius: 8px;
   bottom: 0;
   margin-top: 46px;
+}
+.reviews{
+  overflow-y: scroll;
 }
 /* 
 .swiper-horizontal > .swiper-pagination-progressbar,
