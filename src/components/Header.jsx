@@ -37,12 +37,10 @@ const Header = ({ language, setLanguage }) => {
   };
   const openResponsiveAboutCompany = () => {
     setResponsiveAboutCompany(true);
-    // closeResponsiveUslugi()
     setResponsiveUslugi(false);
   };
   const closeResponsiveAboutCompany = () => {
     setResponsiveAboutCompany(false);
-    // setResponsiveUslugi(false);
   };
   const openHamburger = () => {
     setHambutger(!hamburger);
