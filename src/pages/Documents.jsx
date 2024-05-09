@@ -52,8 +52,8 @@ const Documents = ({ language, setLanguage }) => {
   ];
   return (
     <section className="py-[67px] bg-#040D12">
-      <div className="containerb flex space-x-[58px]">
-        <div>
+      <div className="containerb 950px:flex 950px:space-x-[58px] max-950px:space-y-5">
+        <div className=" scroll-container-documents flex 950px:flex-col max-950px:space-x-2.5">
           {DocumentsLang.map((lan, index) => {
             if (language === lan.lang) {
               return (
@@ -64,7 +64,7 @@ const Documents = ({ language, setLanguage }) => {
                     activeTab === index
                       ? "bg-#9F95FF "
                       : "border-2  border-white"
-                  } whitespace-nowrap block mb-4  py-1.5 px-4 text-white rounded-[22px] text-base leading-8 font-semibold`}
+                  } whitespace-nowrap block  mb-4  py-1.5 px-4 text-white rounded-[22px] text-base leading-8 font-semibold`}
                 >
                   {lan.button}
                 </button>
@@ -80,7 +80,7 @@ const Documents = ({ language, setLanguage }) => {
                   key={index}
                   className={`${
                     activeTab === index ? "" : "hidden"
-                  } leading-8 text-base font-medium tracking-[-1%] text-white`}
+                  } leading-8  531px:text-base text-xs font-medium tracking-[-1%] text-white`}
                 >
                   {lan.text}
                 </p>

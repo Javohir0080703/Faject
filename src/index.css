@@ -60,6 +60,15 @@ body {
     max-width: 100%;
   }
 }
+.scroll-container-documents {
+}
+
+@media only screen and (max-width: 950px) {
+  .scroll-container-documents {
+    overflow-x: scroll;
+    max-width: 100%;
+  }
+}
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #ffffff;
