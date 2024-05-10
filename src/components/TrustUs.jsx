@@ -31,11 +31,11 @@ const TrustUs = ({ language, setLanguage }) => {
             TrustUsData.map((lan, index)=>{
                 if(language === lan.lang){
                     return(
-                        <div>
-                            <h2 className='font-semibold text-64px leading-78px text-white mb-8'>{lan.title}</h2>
-                            <div className='flex items-center justify-between'>
-                                <img className='w-full max-w-[260px]' src={lan.img} alt="Img" />
-                                <p className='w-full max-w-[760px] text-2xl leading-8 text-white'>{lan.text}</p>
+                        <div key={index}>
+                            <h2 className='font-semibold 750px:text-4xl 440px:text-2xl text-xl 1030px:text-64px leading-10 1030px:leading-78px text-white mb-8 max-440px:text-center '>{lan.title}</h2>
+                            <div className='440px:flex items-center justify-between  440px:pace-x-5'>
+                                <img className='w-full 1030px:max-w-[260px] 750px:max-w-[180px] max-w-[100px] 440px:mx-0 mx-auto max-440px:mb-5' src={lan.img} alt="Img" />
+                                <p className='w-full max-w-[760px] 1030px:text-2xl 750px:text-lg 440px:text-sm text-xs  440px:leading-8 leading-5 text-white'>{lan.text}</p>
                             </div>
                         </div>
                     )
