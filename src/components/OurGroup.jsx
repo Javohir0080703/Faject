@@ -171,7 +171,7 @@ const OurGroup = ({ language, setLanguage }) => {
         {titleLang.map((lan, index) => {
           if (language === lan.lang) {
             return (
-              <h2 className="font-semibold 750px:text-64px 440px:text-4xl text-2xl max-440px:text-center 750px:leading-78px leading-10 text-white mb-8">
+              <h2 key={index} className="font-semibold 750px:text-64px 440px:text-4xl text-2xl max-440px:text-center 750px:leading-78px leading-10 text-white mb-8">
                 {lan.title}
               </h2>
             );
@@ -182,7 +182,7 @@ const OurGroup = ({ language, setLanguage }) => {
           ourGroup.map((lan, index)=>{
             if(language === lan.lang){
                 return(
-                    <li>
+                    <li key={index}>
                         <img className="w-full max-w-[120px] mx-auto p-[30px] border border-white rounded-[20px] mb-5" src={lan.img === "" ? ourgroupimg : lan.img} alt="Img" />
                           <h3 className="font-bold text-3xl leading-8 text-#9F95FF text-center">{lan.title}</h3>
                           <p className="font-[300] text-base leading-8 text-white text-center">{lan.name}</p>
