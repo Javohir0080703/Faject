@@ -1,8 +1,22 @@
 import React from "react";
 import { lastReporterData } from "../data";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const LastReporterDetail = ({ language, setLanguage }) => {
+  const Language = [
+    {
+      title:"К другим  новостям...",
+      lang:"ru"
+    },
+    {
+      title:"In other news...",
+      lang:"eng"
+    },
+    {
+      title:"Boshqa yangiliklarda ...",
+      lang:"uzb"
+    },
+  ]
   const { id } = useParams();
   const detail = lastReporterData.find((last) => last.id.toString() === id);
   return (
@@ -22,7 +36,7 @@ const LastReporterDetail = ({ language, setLanguage }) => {
       </div>
 
       <div className="py-16 bg-#040D12">
-        <div className="containerb">
+        <div className="containerb space-y-8">
             <div>
               <h3 className="font-bold text-3xl leading-9 tracking-[-1%] text-white mb-4">{detail.articles}</h3>
               <ul className="pl-12 mb-8">
@@ -32,13 +46,32 @@ const LastReporterDetail = ({ language, setLanguage }) => {
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-3xl leading-9 tracking-[-1%] text-white mb-4">{detail.why}</h3>
-              <p className="font-medium text-base leading-8 text-white ">{whyText}</p>
+              <h3 className="font-bold text-3xl leading-9 tracking-[-1%] text-#9F95FF mb-4">{detail.why}</h3>
+              <p className="font-medium text-base leading-8 text-white ">{detail.whyText}</p>
               <ul className="pl-12 mb-8">
                 {
                   detail.aboutWhy.map((e, index)=>{return(<li className="list-number-style font-medium text-base leading-8 tracking-[-1%] text-white" key={index}>{e}</li>)})
                 }
               </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-3xl leading-9 tracking-[-1%] text-#9F95FF mb-4">{detail.etap}</h3>
+              <p  className="list-number-style font-medium text-base leading-8 tracking-[-1%] text-white">{detail.etapText}</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-3xl leading-9 tracking-[-1%] text-#9F95FF mb-4">{detail.kulayliklar}</h3>
+              <p  className="list-number-style font-medium text-base leading-8 tracking-[-1%] text-white">{detail.kulayliklarText}</p>
+            </div>
+            <div className="flex justify-end">
+             {
+              Language.map((e, index)=>{
+                if(language === e.lang){
+                  return(
+                    <Link className="py-1.5 px-4 font-semibold text-base leading-8 tracking-[-1%] text-white border-2 border-#CBC6FD rounded-[22px]">{e.title}</Link>
+                  )
+                }
+              })
+             }
             </div>
         </div>
       </div>
