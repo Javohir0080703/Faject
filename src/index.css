@@ -98,14 +98,6 @@ body {
 .reviews{
   overflow-y: scroll;
 }
-/* 
-.swiper-horizontal > .swiper-pagination-progressbar,
-.swiper-pagination-progressbar.swiper-pagination-horizontal,
-.swiper-vertical
-  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
-.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
-  position: relative;
-  height: 8px;
-  width: 100%;
-  bottom: 0;
-} */
+.list-number-style{
+  list-style: decimal;
+}

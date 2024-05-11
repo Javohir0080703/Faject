@@ -9,17 +9,17 @@ const LastReporter = ({ language, setLanguage }) => {
   const titleLang = [
     {
       title: "Последние новости",
-      allLink:"Читать все",
+      allLink: "Читать все",
       lang: "ru",
     },
     {
       title: "Last news",
-      allLink:"Read all",
+      allLink: "Read all",
       lang: "eng",
     },
     {
       title: "So'ngi yangiliklar",
-      allLink:"Hammasini o'qing",
+      allLink: "Hammasini o'qing",
       lang: "uzb",
     },
   ];
@@ -52,7 +52,6 @@ const LastReporter = ({ language, setLanguage }) => {
                 // centeredSlides: true,
               },
             }}
-            
             pagination={{
               type: "progressbar",
             }}
@@ -66,10 +65,18 @@ const LastReporter = ({ language, setLanguage }) => {
                     key={index}
                     className="w-full max-w-[340px] py-5 px-5 border-white border rounded-20px"
                   >
-                    <img className="mb-4" src={lan.img} alt={lan.title} />
-                      <p className="text-white leading-8 text-base font-[300] mb-4">{lan.data}</p>
-                      <p className="text-2xl leading-8 font-bold text-#9F95FF mb-1">{lan.title}</p>
-                      <p className="font-medium text-base leading-8 text-white">{lan.text.slice(0, 85)}...</p>
+                    <Link to={`/last_reporter/${lan.id}`}>
+                      <img className="mb-4" src={lan.img} alt={lan.title} />
+                      <p className="text-white leading-8 text-base font-[300] mb-4">
+                        {lan.data}
+                      </p>
+                      <p className="text-2xl leading-8 font-bold text-#9F95FF mb-1">
+                        {lan.title}
+                      </p>
+                      <p className="font-medium text-base leading-8 text-white">
+                        {lan.text.slice(0, 85)}...
+                      </p>
+                    </Link>
                   </SwiperSlide>
                 );
               }
@@ -77,15 +84,18 @@ const LastReporter = ({ language, setLanguage }) => {
           </Swiper>
         </div>
         <div className="flex justify-end">
-          {
-            titleLang.map((lan, index)=>{
-              if(language === lan.lang){
-                return(
-                  <Link key={index} className="py-1.5 px-4 border-2 border-white rounded-3xl text-white">{lan.allLink}</Link>
-                )
-              }
-            })
-          }
+          {titleLang.map((lan, index) => {
+            if (language === lan.lang) {
+              return (
+                <Link
+                  key={index}
+                  className="py-1.5 px-4 border-2 border-white rounded-3xl text-white"
+                >
+                  {lan.allLink}
+                </Link>
+              );
+            }
+          })}
         </div>
       </div>
     </section>
