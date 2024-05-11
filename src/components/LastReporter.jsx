@@ -88,6 +88,7 @@ const LastReporter = ({ language, setLanguage }) => {
             if (language === lan.lang) {
               return (
                 <Link
+                to="/blog"
                   key={index}
                   className="py-1.5 px-4 border-2 border-white rounded-3xl text-white"
                 >
