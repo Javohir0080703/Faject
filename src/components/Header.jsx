@@ -1067,7 +1067,7 @@ const Header = ({ language, setLanguage }) => {
             </div>
           )}
           {responsiveAboutCompany && (
-            <div className="z-[99999]">
+            <div className="">
               {/* ru */}
               <div
                 className={`${
