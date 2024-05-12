@@ -67,7 +67,7 @@ const LastReporterDetail = ({ language, setLanguage }) => {
               Language.map((e, index)=>{
                 if(language === e.lang){
                   return(
-                    <Link to="/blog" className="py-1.5 px-4 font-semibold text-base leading-8 tracking-[-1%] text-white border-2 border-#CBC6FD rounded-[22px]">{e.title}</Link>
+                    <Link key={index} to="/blog" className="py-1.5 px-4 font-semibold text-base leading-8 tracking-[-1%] text-white border-2 border-#CBC6FD rounded-[22px]">{e.title}</Link>
                   )
                 }
               })
