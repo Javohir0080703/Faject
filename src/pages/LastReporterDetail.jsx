@@ -28,9 +28,9 @@ const LastReporterDetail = ({ language, setLanguage }) => {
       >
         <div className="containerb">
           <div className="pt-[206px] pb-[176px] ">
-             <h4 className="text-white text-2xl leading-8 mb-8">{detail.data}</h4>
-             <h2 className="font-semibold text-64px leading-78px  tracking-[-4%] text-white mb-8 ">{detail.title}</h2>
-             <p className="w-full max-w-[850px] text-white font-medium  text-base leading-8">{detail.text}</p>
+             <h4 className="text-white 531px:text-2xl text-lg 531px:leading-8 leading-5 mb-8">{detail.data}</h4>
+             <h2 className="font-semibold 950px:text-64px 750px:text-5xl 440px:text-3xl text-xl 750px:leading-78px  440px:leading-10 leading-7 tracking-[-4%] text-white mb-8 ">{detail.title}</h2>
+             <p className="w-full max-w-[850px] text-white font-medium  750px:text-base 440px:text-sm text-xs 750px:leading-8 leading-6">{detail.text}</p>
           </div>
         </div>
       </div>
