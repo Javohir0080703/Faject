@@ -1,31 +1,15 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { lastReporterData } from "../data";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
-import { Grid, Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
+
 const BlogPage = ({ language, setLanguage }) => {
   const titleLang = [
-    // ru
-    {
-      title: "Блог",
-      lang: "ru",
-    },
-    // eng
-    {
-      title: "Blog",
-      lang: "eng",
-    },
-    // uzb
-    {
-      title: "Blog",
-      lang: "uzb",
-    },
+    { title: "Блог", lang: "ru" },
+    { title: "Blog", lang: "eng" },
+    { title: "Blog", lang: "uzb" },
   ];
 
   const pagination = {
@@ -34,36 +18,35 @@ const BlogPage = ({ language, setLanguage }) => {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
+
   return (
     <section className="py-16 bg-#040D12 select-none">
       <div className="containerb">
         {titleLang.map((e, index) => {
           if (language === e.lang) {
             return (
-              <h2 key={index} className="text-white 531px:text-64px text-5xl 531px:leading-78px leading-10 max-531px:text-center font-semibold tracking-[-4%] mb-8">
+              <h2
+                key={index}
+                className="text-white 531px:text-64px text-5xl 531px:leading-78px leading-10 max-531px:text-center font-semibold tracking-[-4%] mb-8"
+              >
                 {e.title}
               </h2>
             );
           }
+          return null; // key xatolari uchun
         })}
 
         <div className="">
           <Swiper
-              spaceBetween={40}
-              slidesPerView={1}
-              breakpoints={{
-                880: {
-                  slidesPerView: 3,
-                 
-                },
-                590: {
-                  slidesPerView: 2,
-                },
-              }}
+            spaceBetween={40}
+            slidesPerView={1}
+            breakpoints={{
+              880: { slidesPerView: 3 },
+              590: { slidesPerView: 2 },
+            }}
             pagination={pagination}
-            modules={[Pagination]}
             className="mySwiper relative  pb-[65px]"
-          > 
+          >
             {lastReporterData.map((e, index) => {
               if (language === e.lang) {
                 return (
@@ -72,7 +55,11 @@ const BlogPage = ({ language, setLanguage }) => {
                     className="w-full 580px:max-w-[340px]  py-5 px-5 border-white border rounded-20px "
                   >
                     <Link to={`/last_reporter/${e.id}`}>
-                      <img className="mb-4 max-580px:w-full " src={e.img} alt={e.title} />
+                      <img
+                        className="mb-4 max-580px:w-full "
+                        src={e.img}
+                        alt={e.title}
+                      />
                       <p className="text-white leading-8 text-base font-[300] mb-4">
                         {e.data}
                       </p>
@@ -86,6 +73,7 @@ const BlogPage = ({ language, setLanguage }) => {
                   </SwiperSlide>
                 );
               }
+              return null; // key xatolari uchun
             })}
           </Swiper>
         </div>
