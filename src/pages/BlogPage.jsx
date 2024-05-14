@@ -33,7 +33,7 @@ const BlogPage = ({ language, setLanguage }) => {
               </h2>
             );
           }
-          return null; // key xatolari uchun
+          return null; 
         })}
 
         <div className="">
@@ -73,7 +73,7 @@ const BlogPage = ({ language, setLanguage }) => {
                   </SwiperSlide>
                 );
               }
-              return null; // key xatolari uchun
+              return null; 
             })}
           </Swiper>
         </div>
