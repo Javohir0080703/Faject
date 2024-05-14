@@ -18,12 +18,12 @@ const BlogPage = ({ language, setLanguage }) => {
     },
     // eng
     {
-      title: "Блог",
+      title: "Blog",
       lang: "eng",
     },
     // uzb
     {
-      title: "Блог",
+      title: "Blog",
       lang: "uzb",
     },
   ];
@@ -54,12 +54,10 @@ const BlogPage = ({ language, setLanguage }) => {
               breakpoints={{
                 880: {
                   slidesPerView: 3,
-                  // slidesOffsetAfter:3,
-                  // centeredSlides: true,
+                 
                 },
                 590: {
                   slidesPerView: 2,
-                  // centeredSlides: true,
                 },
               }}
             pagination={pagination}
