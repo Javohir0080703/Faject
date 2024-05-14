@@ -95,9 +95,29 @@ body {
   bottom: 0;
   margin-top: 46px;
 }
-.reviews{
+.reviews {
   overflow-y: scroll;
 }
-.list-number-style{
+.list-number-style {
   list-style: decimal;
+}
+.swiper-pagination-bullet {
+  width: 26px;
+  height: 0;
+  /* padding-top: 150px; */
+  color: white;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  opacity: 1;
+
+}
+.swiper-pagination-bullet-active{
+  color: #9F95FF;
+  background-color: transparent;
+}
+.swiper-pagination {
+ /* position: relative; */
+ 
 }
