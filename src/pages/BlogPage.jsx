@@ -1,13 +1,5 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
 import { lastReporterData } from "../data";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-// import required modules
-import { Grid, Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 const BlogPage = ({ language, setLanguage }) => {
   const titleLang = [
@@ -27,13 +19,6 @@ const BlogPage = ({ language, setLanguage }) => {
       lang: "uzb",
     },
   ];
-
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  };
   return (
     <section className="py-16 bg-#040D12 select-none">
       <div className="containerb">
@@ -51,25 +36,11 @@ const BlogPage = ({ language, setLanguage }) => {
         })}
 
         <div className="">
-          <Swiper
-            spaceBetween={40}
-            slidesPerView={1}
-            breakpoints={{
-              880: {
-                slidesPerView: 3,
-              },
-              590: {
-                slidesPerView: 2,
-              },
-            }}
-            pagination={pagination}
-            modules={[Pagination]}
-            className="mySwiper relative  pb-[65px]"
-          >
+          <ul className="mySwiper relative  pb-[65px] grid 750px:grid-cols-3 580px:grid-cols-2 grid-cols-1 gap-x-8 gap-y-8">
             {lastReporterData.map((e, index) => {
               if (language === e.lang) {
                 return (
-                  <SwiperSlide
+                  <li
                     key={index}
                     className="w-full 580px:max-w-[340px]  py-5 px-5 border-white border rounded-20px "
                   >
@@ -89,11 +60,11 @@ const BlogPage = ({ language, setLanguage }) => {
                         {e.text.slice(0, 85)}...
                       </p>
                     </Link>
-                  </SwiperSlide>
+                  </li>
                 );
               }
             })}
-          </Swiper>
+          </ul>
         </div>
       </div>
     </section>

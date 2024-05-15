@@ -664,6 +664,7 @@ const Header = ({ language, setLanguage }) => {
                 Отзывы
               </Link>
               <Link
+              to="/contact"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -711,6 +712,7 @@ const Header = ({ language, setLanguage }) => {
                 Reviews
               </Link>
               <Link
+              to="/contact"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -758,6 +760,7 @@ const Header = ({ language, setLanguage }) => {
                 Sharhlar
               </Link>
               <Link
+              to="/contact"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -1087,6 +1090,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
+                    to="/contact"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1148,6 +1152,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
+                    to="/contact"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1209,6 +1214,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
+                    to="/contact"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
