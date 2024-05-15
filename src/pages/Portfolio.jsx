@@ -64,7 +64,15 @@ const Portfolio = ({ language, setLanguage }) => {
 
         <ul>
             {
-                
+                PortfolioData.map((e, index)=>{
+                    if(language === e.lang){
+                        return(
+                            <li className={`${activeTab === e.tip ? "":"hidden"}`}>
+                               
+                            </li>
+                        )
+                    }
+                })
             }
         </ul>
       </div>
