@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { lastReporterData } from "../data";
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Link } from "react-router-dom";
 
+// import required modules
+import { Grid, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 const BlogPage = ({ language, setLanguage }) => {
   const titleLang = [
-    { title: "Блог", lang: "ru" },
-    { title: "Blog", lang: "eng" },
-    { title: "Blog", lang: "uzb" },
+    // ru
+    {
+      title: "Блог",
+      lang: "ru",
+    },
+    // eng
+    {
+      title: "Blog",
+      lang: "eng",
+    },
+    // uzb
+    {
+      title: "Blog",
+      lang: "uzb",
+    },
   ];
 
   const pagination = {
@@ -18,7 +34,6 @@ const BlogPage = ({ language, setLanguage }) => {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
-
   return (
     <section className="py-16 bg-#040D12 select-none">
       <div className="containerb">
@@ -33,7 +48,6 @@ const BlogPage = ({ language, setLanguage }) => {
               </h2>
             );
           }
-          return null; 
         })}
 
         <div className="">
@@ -41,10 +55,15 @@ const BlogPage = ({ language, setLanguage }) => {
             spaceBetween={40}
             slidesPerView={1}
             breakpoints={{
-              880: { slidesPerView: 3 },
-              590: { slidesPerView: 2 },
+              880: {
+                slidesPerView: 3,
+              },
+              590: {
+                slidesPerView: 2,
+              },
             }}
             pagination={pagination}
+            modules={[Pagination]}
             className="mySwiper relative  pb-[65px]"
           >
             {lastReporterData.map((e, index) => {
@@ -73,7 +92,6 @@ const BlogPage = ({ language, setLanguage }) => {
                   </SwiperSlide>
                 );
               }
-              return null; 
             })}
           </Swiper>
         </div>
