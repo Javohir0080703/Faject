@@ -14,6 +14,7 @@ import AboutUs from "./pages/AboutUs";
 import LastReporterDetail from "./pages/LastReporterDetail";
 import BlogPage from "./pages/BlogPage";
 import Contacts from "./pages/Contacts";
+import Portfolio from "./pages/Portfolio";
 const App = () => {
   const [language, setLanguage] = useState("ru");
   const router = createBrowserRouter(
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/blog" element={<BlogPage language={language} setLanguage={setLanguage} />} />
         <Route path="/last_reporter/:id" element={<LastReporterDetail language={language} setLanguage={setLanguage} />} />
         <Route path="/contact" element={<Contacts language={language} setLanguage={setLanguage} />} />
+        <Route path="/portfolio" element={<Portfolio language={language} setLanguage={setLanguage} />} />
       </Route>
     )
   );

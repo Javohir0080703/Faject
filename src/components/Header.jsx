@@ -243,7 +243,7 @@ const Header = ({ language, setLanguage }) => {
                 </button>
               </li>
               <li>
-                <Link className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
                   Портфолио
                 </Link>
               </li>
@@ -272,7 +272,7 @@ const Header = ({ language, setLanguage }) => {
                 </button>
               </li>
               <li>
-                <Link className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
                   Portfolio
                 </Link>
               </li>
@@ -301,7 +301,7 @@ const Header = ({ language, setLanguage }) => {
                 </button>
               </li>
               <li>
-                <Link className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
                   Portfolio
                 </Link>
               </li>
@@ -829,7 +829,7 @@ const Header = ({ language, setLanguage }) => {
                   </button>
                 </li>
                 <li>
-                  <Link className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                  <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
                     Портфолио
                   </Link>
                 </li>
@@ -854,7 +854,7 @@ const Header = ({ language, setLanguage }) => {
                   </button>
                 </li>
                 <li>
-                  <Link className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                  <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
                     Portfolio
                   </Link>
                 </li>
@@ -879,7 +879,7 @@ const Header = ({ language, setLanguage }) => {
                   </button>
                 </li>
                 <li>
-                  <Link className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                  <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
                     Portfolio
                   </Link>
                 </li>
@@ -1068,7 +1068,7 @@ const Header = ({ language, setLanguage }) => {
                 </ul>
               </div>
             </div>
-          )}npm run dev
+          )}
           
           {responsiveAboutCompany && (
             <div className="">
