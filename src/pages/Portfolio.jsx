@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { PortfolioData } from "../data";
-import portfolioTip1 from "../img/portfolioTip1.svg";
-import portfolioTip2 from "../img/portfolioTip2.svg";
 import { Link } from "react-router-dom";
 const Portfolio = ({ language, setLanguage }) => {
   const [activeTab, setActiveTab] = useState("");
