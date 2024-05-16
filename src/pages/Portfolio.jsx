@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { PortfolioData } from "../data";
 import { Link } from "react-router-dom";
-const Portfolio = ({ language, setLanguage }) => {
+const Portfolio = ({ language }) => {
   const [activeTab, setActiveTab] = useState("");
 
   useEffect(() => {
