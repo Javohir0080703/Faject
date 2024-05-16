@@ -90,7 +90,7 @@ const Portfolio = ({ language, setLanguage }) => {
                 fill="#ffffff"
               />
             </svg>
-            В разработке
+            In developing
           </button>
           <button
             className={`flex items-center 580px:py-2 580px:px-4 px-2.5 rounded-[22px] 440px:font-semibold font-normal 580px:text-base 440px:text-sm 380px:text-xs text-[9px] leading-8  text-white ${
@@ -113,7 +113,7 @@ const Portfolio = ({ language, setLanguage }) => {
                 fill="white"
               />
             </svg>
-            Выполненнные проекты
+            Completed projects
           </button>
         </div>
         <div
@@ -140,7 +140,7 @@ const Portfolio = ({ language, setLanguage }) => {
                 fill="#ffffff"
               />
             </svg>
-            В разработке
+            Rivojlanishda
           </button>
           <button
             className={`flex items-center 580px:py-2 580px:px-4 px-2.5 rounded-[22px] 440px:font-semibold font-normal 580px:text-base 440px:text-sm 380px:text-xs text-[9px] leading-8  text-white ${
@@ -163,7 +163,7 @@ const Portfolio = ({ language, setLanguage }) => {
                 fill="white"
               />
             </svg>
-            Выполненнные проекты
+            Tugallangan loyihalar
           </button>
         </div>
 
