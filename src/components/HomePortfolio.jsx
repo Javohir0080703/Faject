@@ -368,7 +368,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Назад
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Смотреть все проекты
             </Link>
             <button
@@ -390,7 +390,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Back
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               View all projects
             </Link>
             <button
@@ -412,7 +412,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Orqaga
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Barcha loyihalarni ko'rish
             </Link>
             <button
@@ -483,7 +483,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Назад
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Смотреть все проекты
             </Link>
             <button
@@ -505,7 +505,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Back
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               View all projects
             </Link>
             <button
@@ -527,7 +527,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Orqaga
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Barcha loyihalarni ko'rish
             </Link>
             <button
@@ -596,7 +596,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Назад
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Смотреть все проекты
             </Link>
             <button
@@ -618,7 +618,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Back
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               View all projects
             </Link>
             <button
@@ -640,7 +640,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Orqaga
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Barcha loyihalarni ko'rish
             </Link>
             <button
@@ -705,7 +705,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Назад
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Смотреть все проекты
             </Link>
             <button
@@ -727,7 +727,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Back
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               View all projects
             </Link>
             <button
@@ -749,7 +749,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Orqaga
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Barcha loyihalarni ko'rish
             </Link>
             <button
@@ -814,7 +814,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Назад
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Смотреть все проекты
             </Link>
             <button
@@ -836,7 +836,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Back
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               View all projects
             </Link>
             <button
@@ -858,7 +858,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Orqaga
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Barcha loyihalarni ko'rish
             </Link>
             <button
@@ -931,7 +931,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Назад
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Смотреть все проекты
             </Link>
             <button
@@ -953,7 +953,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Back
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               View all projects
             </Link>
             <button
@@ -975,7 +975,7 @@ const HomePortfolio = ({ language, setLanguage }) => {
             >
               Orqaga
             </button>
-            <Link className="text-#9F95FF text-2xl leading-8 531px:block hidden">
+            <Link to="/portfolio" className="text-#9F95FF text-2xl leading-8 531px:block hidden">
               Barcha loyihalarni ko'rish
             </Link>
             <button

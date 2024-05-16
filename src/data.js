@@ -7,6 +7,7 @@ import portfolioImg1 from './img/portfolioImg1.png'
 import portfolioImg2 from './img/portfolioImg2.png'
 import portfolioTip1 from './img/portfolioTip1.svg'
 import portfolioTip2 from './img/portfolioTip2.svg'
+import portfolioGlobalimg from './img/portfolioGlobalimg.png'
 export const HomePortfolioData = [
   // ru
   {
@@ -1796,8 +1797,9 @@ export const PortfolioData = [
   // ru
   {
     id:1,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -1810,16 +1812,17 @@ export const PortfolioData = [
     SolutionsText:"Компания является официальным представителем оборудования из Китая, России, Европы. Именно на этом сделан акцент на главном экране сайта. Также предусмотрен быстрый вход в каталог, чтобы подробно изучить продукцию.",
     purpose:"Основная цель сайта",
     purposeText:"Сайт-каталог или сайт-витрина похож на интернет-магазин. Основной упор сделан на карточки товара с фотографиями продукции и характеристиками. Иконки, изображающие позицию в каталоге нарисованы нашим дизайнером.",
-    purposeImg:portfolioImg1,
-    aboutImg: portfolioImg2,
-    aboutImg2: portfolioImg2,
+    purposeImg:portfolioImg2,
+    aboutImg: portfolioImg1,
+    aboutImg2: portfolioImg1,
     aboutText:"Заказчик выполняет проекты с нуля, поэтому на сайте важно описать, как проходит процесс работы. Это снимает лишние вопросы у потенциальных клиентов. На сайте процесс изображен в виде карточек с отрисованными нашим дизайнером иконками.",
     lang:"ru"
   },
   {
     id:2,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -1840,8 +1843,9 @@ export const PortfolioData = [
   },
   {
     id:3,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -1862,8 +1866,9 @@ export const PortfolioData = [
   },
   {
     id:4,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -1884,8 +1889,9 @@ export const PortfolioData = [
   },
   {
     id:5,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -1906,8 +1912,9 @@ export const PortfolioData = [
   },
   {
     id:6,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -1928,8 +1935,9 @@ export const PortfolioData = [
   },
   {
     id:7,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -1950,8 +1958,9 @@ export const PortfolioData = [
   },
   {
     id:8,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -1972,8 +1981,9 @@ export const PortfolioData = [
   },
   {
     id:9,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -1994,8 +2004,9 @@ export const PortfolioData = [
   },
   {
     id:10,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"Интернет-магазин «PORTSHOP»",
     text:"Разработка веб-сайта для магазина кораблей началась с анализа потребностей потенциальных клиентов и конкурентов. На основе полученных данных был создан удобный интерфейс, позволяющий пользователям легко находить нужную информацию о кораблях, их характеристиках, ценах и условиях покупки.",
     tipText:"В разработке",
@@ -2017,8 +2028,9 @@ export const PortfolioData = [
   // eng
   {
     id:11,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2035,12 +2047,13 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   {
     id:12,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2050,19 +2063,20 @@ export const PortfolioData = [
     Objective:"Objective of the project:",
     ObjectiveText:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase.",
     Solutions:"Solutions",
-    SolutionsText:"The company is the official representative of equipment from China, Russia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
+    SolutionsText:"The company is the official representative of equipment from China, engssia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
     purpose:"Main purpose of the site",
     purposeText:"A catalog site or showcase site is similar to an online store. The main emphasis is on product cards with product photographs and characteristics. The icons depicting the position in the catalog are drawn by our designer.",
     purposeImg:portfolioImg1,
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   {
     id:13,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2072,19 +2086,20 @@ export const PortfolioData = [
     Objective:"Objective of the project:",
     ObjectiveText:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase.",
     Solutions:"Solutions",
-    SolutionsText:"The company is the official representative of equipment from China, Russia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
+    SolutionsText:"The company is the official representative of equipment from China, engssia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
     purpose:"Main purpose of the site",
     purposeText:"A catalog site or showcase site is similar to an online store. The main emphasis is on product cards with product photographs and characteristics. The icons depicting the position in the catalog are drawn by our designer.",
     purposeImg:portfolioImg1,
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   {
     id:14,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2094,19 +2109,20 @@ export const PortfolioData = [
     Objective:"Objective of the project:",
     ObjectiveText:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase.",
     Solutions:"Solutions",
-    SolutionsText:"The company is the official representative of equipment from China, Russia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
+    SolutionsText:"The company is the official representative of equipment from China, engssia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
     purpose:"Main purpose of the site",
     purposeText:"A catalog site or showcase site is similar to an online store. The main emphasis is on product cards with product photographs and characteristics. The icons depicting the position in the catalog are drawn by our designer.",
     purposeImg:portfolioImg1,
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   {
     id:15,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2116,19 +2132,20 @@ export const PortfolioData = [
     Objective:"Objective of the project:",
     ObjectiveText:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase.",
     Solutions:"Solutions",
-    SolutionsText:"The company is the official representative of equipment from China, Russia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
+    SolutionsText:"The company is the official representative of equipment from China, engssia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
     purpose:"Main purpose of the site",
     purposeText:"A catalog site or showcase site is similar to an online store. The main emphasis is on product cards with product photographs and characteristics. The icons depicting the position in the catalog are drawn by our designer.",
     purposeImg:portfolioImg1,
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   {
     id:16,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2138,19 +2155,20 @@ export const PortfolioData = [
     Objective:"Objective of the project:",
     ObjectiveText:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase.",
     Solutions:"Solutions",
-    SolutionsText:"The company is the official representative of equipment from China, Russia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
+    SolutionsText:"The company is the official representative of equipment from China, engssia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
     purpose:"Main purpose of the site",
     purposeText:"A catalog site or showcase site is similar to an online store. The main emphasis is on product cards with product photographs and characteristics. The icons depicting the position in the catalog are drawn by our designer.",
     purposeImg:portfolioImg1,
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   {
     id:17,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2160,19 +2178,20 @@ export const PortfolioData = [
     Objective:"Objective of the project:",
     ObjectiveText:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase.",
     Solutions:"Solutions",
-    SolutionsText:"The company is the official representative of equipment from China, Russia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
+    SolutionsText:"The company is the official representative of equipment from China, engssia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
     purpose:"Main purpose of the site",
     purposeText:"A catalog site or showcase site is similar to an online store. The main emphasis is on product cards with product photographs and characteristics. The icons depicting the position in the catalog are drawn by our designer.",
     purposeImg:portfolioImg1,
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   {
     id:18,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2182,19 +2201,20 @@ export const PortfolioData = [
     Objective:"Objective of the project:",
     ObjectiveText:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase.",
     Solutions:"Solutions",
-    SolutionsText:"The company is the official representative of equipment from China, Russia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
+    SolutionsText:"The company is the official representative of equipment from China, engssia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
     purpose:"Main purpose of the site",
     purposeText:"A catalog site or showcase site is similar to an online store. The main emphasis is on product cards with product photographs and characteristics. The icons depicting the position in the catalog are drawn by our designer.",
     purposeImg:portfolioImg1,
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   {
     id:19,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2204,19 +2224,20 @@ export const PortfolioData = [
     Objective:"Objective of the project:",
     ObjectiveText:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase.",
     Solutions:"Solutions",
-    SolutionsText:"The company is the official representative of equipment from China, Russia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
+    SolutionsText:"The company is the official representative of equipment from China, engssia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
     purpose:"Main purpose of the site",
     purposeText:"A catalog site or showcase site is similar to an online store. The main emphasis is on product cards with product photographs and characteristics. The icons depicting the position in the catalog are drawn by our designer.",
     purposeImg:portfolioImg1,
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   {
     id:20,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"Online store <<PORTSHOP>>",
     text:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase..",
     tipText:"In developing",
@@ -2226,20 +2247,21 @@ export const PortfolioData = [
     Objective:"Objective of the project:",
     ObjectiveText:"The development of a website for a ship store began with an analysis of the needs of potential customers and competitors. Based on the data obtained, a convenient interface was created that allows users to easily find the necessary information about ships, their characteristics, prices and terms of purchase.",
     Solutions:"Solutions",
-    SolutionsText:"The company is the official representative of equipment from China, Russia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
+    SolutionsText:"The company is the official representative of equipment from China, engssia, and Europe. This is what is emphasized on the main screen of the site. There is also a quick entry into the catalog to study the products in detail.",
     purpose:"Main purpose of the site",
     purposeText:"A catalog site or showcase site is similar to an online store. The main emphasis is on product cards with product photographs and characteristics. The icons depicting the position in the catalog are drawn by our designer.",
     purposeImg:portfolioImg1,
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"The customer completes projects from scratch, so it is important to describe on the website how the work process goes. This eliminates unnecessary questions from potential clients. On the website, the process is depicted in the form of cards with icons drawn by our designer.",
-    lang:"ru"
+    lang:"eng"
   },
   // uzb
   {
     id:21,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"<<PORTSHOP>> onlayn-do'koni",
     text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
@@ -2260,8 +2282,9 @@ export const PortfolioData = [
   },
   {
     id:22,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"<<PORTSHOP>> onlayn-do'koni",
     text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
@@ -2278,14 +2301,15 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
-    lang:"ru"
+    lang:"uzb"
   },
   {
     id:23,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"<<PORTSHOP>> onlayn-do'koni",
-    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
+    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beuzbvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
     Customer:"Rivojlanishda Buyurtmachi:",
     CustomerText:"Portshop – поставщик корабельного оборудования с 1995 года. Компания работает по всей территории СНГ и предоставляет аппаратуру «под ключ».",
@@ -2300,14 +2324,15 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
-    lang:"ru"
+    lang:"uzb"
   },
   {
     id:24,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"<<PORTSHOP>> onlayn-do'koni",
-    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
+    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beuzbvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
     Customer:"Rivojlanishda Buyurtmachi:",
     CustomerText:"Portshop – поставщик корабельного оборудования с 1995 года. Компания работает по всей территории СНГ и предоставляет аппаратуру «под ключ».",
@@ -2322,14 +2347,15 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
-    lang:"ru"
+    lang:"uzb"
   },
   {
     id:25,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"<<PORTSHOP>> onlayn-do'koni",
-    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
+    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beuzbvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
     Customer:"Rivojlanishda Buyurtmachi:",
     CustomerText:"Portshop – поставщик корабельного оборудования с 1995 года. Компания работает по всей территории СНГ и предоставляет аппаратуру «под ключ».",
@@ -2344,14 +2370,15 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
-    lang:"ru"
+    lang:"uzb"
   },
   {
     id:26,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"<<PORTSHOP>> onlayn-do'koni",
-    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
+    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beuzbvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
     Customer:"Rivojlanishda Buyurtmachi:",
     CustomerText:"Portshop – поставщик корабельного оборудования с 1995 года. Компания работает по всей территории СНГ и предоставляет аппаратуру «под ключ».",
@@ -2366,14 +2393,15 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
-    lang:"ru"
+    lang:"uzb"
   },
   {
     id:27,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"<<PORTSHOP>> onlayn-do'koni",
-    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
+    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beuzbvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
     Customer:"Rivojlanishda Buyurtmachi:",
     CustomerText:"Portshop – поставщик корабельного оборудования с 1995 года. Компания работает по всей территории СНГ и предоставляет аппаратуру «под ключ».",
@@ -2388,14 +2416,15 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
-    lang:"ru"
+    lang:"uzb"
   },
   {
     id:28,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"<<PORTSHOP>> onlayn-do'koni",
-    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
+    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beuzbvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
     Customer:"Rivojlanishda Buyurtmachi:",
     CustomerText:"Portshop – поставщик корабельного оборудования с 1995 года. Компания работает по всей территории СНГ и предоставляет аппаратуру «под ключ».",
@@ -2410,14 +2439,15 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
-    lang:"ru"
+    lang:"uzb"
   },
   {
     id:29,
+    img: portfolioGlobalimg,
     tip:"Completed projects",
-    tip: portfolioTip2,
+    tipImg: portfolioTip2,
     title:"<<PORTSHOP>> onlayn-do'koni",
-    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
+    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beuzbvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
     Customer:"Rivojlanishda Buyurtmachi:",
     CustomerText:"Portshop – поставщик корабельного оборудования с 1995 года. Компания работает по всей территории СНГ и предоставляет аппаратуру «под ключ».",
@@ -2432,14 +2462,15 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
-    lang:"ru"
+    lang:"uzb"
   },
   {
     id:30,
+    img: portfolioGlobalimg,
     tip:"developing",
-    tip: portfolioTip1,
+    tipImg: portfolioTip1,
     title:"<<PORTSHOP>> onlayn-do'koni",
-    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beruvchi qulay interfeys yaratildi.",
+    text:"Kema do'koni uchun veb-saytni ishlab chiqish potentsial mijozlar va raqobatchilarning ehtiyojlarini tahlil qilish bilan boshlandi. Olingan ma'lumotlar asosida foydalanuvchilarga kemalar, ularning xususiyatlari, narxlari va sotib olish shartlari haqida kerakli ma'lumotlarni osongina topish imkonini beuzbvchi qulay interfeys yaratildi.",
     tipText:"Rivojlanishda",
     Customer:"Rivojlanishda Buyurtmachi:",
     CustomerText:"Portshop – поставщик корабельного оборудования с 1995 года. Компания работает по всей территории СНГ и предоставляет аппаратуру «под ключ».",
@@ -2454,6 +2485,6 @@ export const PortfolioData = [
     aboutImg: portfolioImg2,
     aboutImg2: portfolioImg2,
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
-    lang:"ru"
+    lang:"uzb"
   },
 ]
