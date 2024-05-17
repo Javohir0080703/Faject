@@ -3,7 +3,7 @@ import companyImg1 from '../img/aboutCompany1.svg'
 import companyImg2 from '../img/aboutCompany2.svg'
 import companyImg3 from '../img/aboutCompany3.svg'
 import companyImg4 from '../img/aboutCompany4.svg'
-const AboutCompany = ({ language, setLanguage }) => {
+const AboutCompany = ({ language}) => {
   const titleLang = [
     {
       title: "О компании",
