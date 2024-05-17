@@ -3,7 +3,7 @@ import aboutUsImg1 from "../img/aboutus1.png";
 import aboutUsImg2 from "../img/aboutus2.png";
 import aboutUsImg3 from "../img/aboutus3.png";
 import aboutUsImg4 from "../img/aboutus4.png";
-const AboutUsHero = ({ language, setLanguage }) => {
+const AboutUsHero = ({ language}) => {
   const HeroTitleData = [
     // ru
     {
