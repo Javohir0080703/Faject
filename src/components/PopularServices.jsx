@@ -5,7 +5,7 @@ import img3 from "../img/popularservicesimg1.png";
 import img4 from "../img/popularservicesimg1.png";
 import img5 from "../img/popularservicesimg1.png";
 import img6 from "../img/popularservicesimg1.png";
-const PopularServices = ({ language, setLanguage }) => {
+const PopularServices = ({ language}) => {
   const PopularServices = [
     // ru
     {
