@@ -1,7 +1,7 @@
 import React from "react";
 import { lastReporterData } from "../data";
 import { Link } from "react-router-dom";
-const BlogPage = ({ language, setLanguage }) => {
+const BlogPage = ({ language}) => {
   const titleLang = [
     // ru
     {
