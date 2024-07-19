@@ -243,7 +243,10 @@ const Header = ({ language, setLanguage }) => {
                 </button>
               </li>
               <li>
-                <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                <Link
+                  to="/portfolio"
+                  className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
+                >
                   Портфолио
                 </Link>
               </li>
@@ -272,7 +275,10 @@ const Header = ({ language, setLanguage }) => {
                 </button>
               </li>
               <li>
-                <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                <Link
+                  to="/portfolio"
+                  className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
+                >
                   Portfolio
                 </Link>
               </li>
@@ -301,7 +307,10 @@ const Header = ({ language, setLanguage }) => {
                 </button>
               </li>
               <li>
-                <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                <Link
+                  to="/portfolio"
+                  className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
+                >
                   Portfolio
                 </Link>
               </li>
@@ -507,6 +516,7 @@ const Header = ({ language, setLanguage }) => {
               }`}
             >
               <Link
+                to="/site_development"
                 onClick={closeUslugi}
                 className="text-2xl leading-8 text-white"
               >
@@ -531,6 +541,7 @@ const Header = ({ language, setLanguage }) => {
                 Мобильная разработка
               </Link>
               <Link
+                to="BotDevelopment"
                 onClick={closeUslugi}
                 className="text-2xl leading-8 text-white"
               >
@@ -550,6 +561,7 @@ const Header = ({ language, setLanguage }) => {
               }`}
             >
               <Link
+                to="/site_development"
                 onClick={closeUslugi}
                 className="text-2xl leading-8 text-white"
               >
@@ -574,6 +586,7 @@ const Header = ({ language, setLanguage }) => {
                 Mobile development
               </Link>
               <Link
+                to="BotDevelopment"
                 onClick={closeUslugi}
                 className="text-2xl leading-8 text-white"
               >
@@ -593,6 +606,7 @@ const Header = ({ language, setLanguage }) => {
               }`}
             >
               <Link
+                to="/site_development"
                 onClick={closeUslugi}
                 className="text-2xl leading-8 text-white"
               >
@@ -617,6 +631,7 @@ const Header = ({ language, setLanguage }) => {
                 Mobil rivojlanish
               </Link>
               <Link
+                to="BotDevelopment"
                 onClick={closeUslugi}
                 className="text-2xl leading-8 text-white"
               >
@@ -664,7 +679,7 @@ const Header = ({ language, setLanguage }) => {
                 Отзывы
               </Link>
               <Link
-              to="/contact"
+                to="/contact"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -678,7 +693,7 @@ const Header = ({ language, setLanguage }) => {
                 Документы
               </Link>
               <Link
-              to="/aboutus"
+                to="/aboutus"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -691,7 +706,7 @@ const Header = ({ language, setLanguage }) => {
                 Обратная связь
               </Link>
               <Link
-              to="/blog"
+                to="/blog"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -712,7 +727,7 @@ const Header = ({ language, setLanguage }) => {
                 Reviews
               </Link>
               <Link
-              to="/contact"
+                to="/contact"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -726,7 +741,7 @@ const Header = ({ language, setLanguage }) => {
                 Documentation
               </Link>
               <Link
-              to="/aboutus"
+                to="/aboutus"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -739,7 +754,7 @@ const Header = ({ language, setLanguage }) => {
                 Feedback
               </Link>
               <Link
-              to="/blog"
+                to="/blog"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -760,7 +775,7 @@ const Header = ({ language, setLanguage }) => {
                 Sharhlar
               </Link>
               <Link
-              to="/contact"
+                to="/contact"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -774,7 +789,7 @@ const Header = ({ language, setLanguage }) => {
                 Hujjatlar
               </Link>
               <Link
-              to="/aboutus"
+                to="/aboutus"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -787,7 +802,7 @@ const Header = ({ language, setLanguage }) => {
                 Qayta aloqa
               </Link>
               <Link
-              to="/blog"
+                to="/blog"
                 onClick={closeAboutCompany}
                 className="text-2xl leading-8 text-white"
               >
@@ -829,7 +844,10 @@ const Header = ({ language, setLanguage }) => {
                   </button>
                 </li>
                 <li>
-                  <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                  <Link
+                    to="/portfolio"
+                    className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
+                  >
                     Портфолио
                   </Link>
                 </li>
@@ -854,7 +872,10 @@ const Header = ({ language, setLanguage }) => {
                   </button>
                 </li>
                 <li>
-                  <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                  <Link
+                    to="/portfolio"
+                    className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
+                  >
                     Portfolio
                   </Link>
                 </li>
@@ -879,7 +900,10 @@ const Header = ({ language, setLanguage }) => {
                   </button>
                 </li>
                 <li>
-                  <Link to="/portfolio" className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD">
+                  <Link
+                    to="/portfolio"
+                    className="font-medium text-base leading-8 tracking-[-1%] text-#CBC6FD"
+                  >
                     Portfolio
                   </Link>
                 </li>
@@ -905,6 +929,7 @@ const Header = ({ language, setLanguage }) => {
                 <ul className="space-y-4">
                   <li>
                     <Link
+                    to="/site_development"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -937,6 +962,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
+                      to="BotDevelopment"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -962,6 +988,7 @@ const Header = ({ language, setLanguage }) => {
                 <ul className="space-y-4">
                   <li>
                     <Link
+                    to="/site_development"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -994,6 +1021,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
+                      to="BotDevelopment"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1019,6 +1047,7 @@ const Header = ({ language, setLanguage }) => {
                 <ul className="space-y-4">
                   <li>
                     <Link
+                    to="/site_development"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1051,6 +1080,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
+                      to="BotDevelopment"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1069,7 +1099,7 @@ const Header = ({ language, setLanguage }) => {
               </div>
             </div>
           )}
-          
+
           {responsiveAboutCompany && (
             <div className="">
               {/* ru */}
@@ -1090,7 +1120,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
-                    to="/contact"
+                      to="/contact"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1107,7 +1137,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
-                    to="/aboutus"
+                      to="/aboutus"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1116,7 +1146,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
-                    to="/blog"
+                      to="/blog"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1152,7 +1182,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
-                    to="/contact"
+                      to="/contact"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1169,7 +1199,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
-                    to="/aboutus"
+                      to="/aboutus"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1178,7 +1208,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
-                    to="/blog"
+                      to="/blog"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1214,7 +1244,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
-                    to="/contact"
+                      to="/contact"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1231,7 +1261,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
-                    to="/aboutus"
+                      to="/aboutus"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >
@@ -1240,7 +1270,7 @@ const Header = ({ language, setLanguage }) => {
                   </li>
                   <li>
                     <Link
-                    to="/blog"
+                      to="/blog"
                       onClick={closeHamburger}
                       className="text-base leading-4 text-white"
                     >

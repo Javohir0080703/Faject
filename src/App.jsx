@@ -16,6 +16,9 @@ import BlogPage from "./pages/BlogPage";
 import Contacts from "./pages/Contacts";
 import Portfolio from "./pages/Portfolio";
 import PortfolioDetail from "./pages/PortfolioDetail";
+import BotDevelopment from "./pages/BotDevelopment";
+import Site_development from "./pages/Site_development";
+import Seo from "./pages/Seo";
 const App = () => {
   const [language, setLanguage] = useState("ru");
   const router = createBrowserRouter(
@@ -39,6 +42,9 @@ const App = () => {
         <Route path="/portfolio/:id" element={<PortfolioDetail language={language} setLanguage={setLanguage} />} />
         <Route path="/contact" element={<Contacts language={language} setLanguage={setLanguage} />} />
         <Route path="/portfolio" element={<Portfolio language={language} setLanguage={setLanguage} />} />
+        <Route path="BotDevelopment" element={<BotDevelopment language={language} setLanguage={setLanguage} />} />
+        <Route path="/site_development" element={<Site_development language={language} setLanguage={setLanguage}/>} />
+        <Route path="/seo" element={<Seo/>} />
       </Route>
     )
   );

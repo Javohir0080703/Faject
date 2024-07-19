@@ -8,6 +8,7 @@ import portfolioImg2 from './img/portfolioImg2.png'
 import portfolioTip1 from './img/portfolioTip1.svg'
 import portfolioTip2 from './img/portfolioTip2.svg'
 import portfolioGlobalimg from './img/portfolioGlobalimg.png'
+
 export const HomePortfolioData = [
   // ru
   {
@@ -2487,4 +2488,13 @@ export const PortfolioData = [
     aboutText:"Buyurtmachi loyihalarni noldan yakunlaydi, shuning uchun veb-saytda ish jarayoni qanday ketayotganini tasvirlab berish muhimdir. Bu potentsial mijozlarning keraksiz savollarini yo'q qiladi. Veb-saytda jarayon bizning dizaynerimiz tomonidan chizilgan piktogramma bilan kartalar shaklida tasvirlangan.",
     lang:"uzb"
   },
+]
+
+
+export const services_data = [
+  {
+    id:1,
+    title:"VK-бот",
+    // img: 
+  }
 ]

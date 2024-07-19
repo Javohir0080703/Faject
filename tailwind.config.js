@@ -10,7 +10,6 @@ export default {
         "#040D12":"#040D12",
         "#CBC6FD":"#CBC6FD",
         "#9F95FF":"#9F95FF",
-        
       },
       margin:{
         "26px":"26px"
